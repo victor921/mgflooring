@@ -1,8 +1,13 @@
-# Cloudflare Pages config for the mgflooring static site.
-# The site is fully prerendered (Nuxt SSG) — Pages serves the static
-# output directly, no Worker runtime needed.
+# Cloudflare config for the mgflooring static site.
+#
+# This git integration deploys with `npx wrangler deploy` (Workers), so we use
+# the Workers *Static Assets* model: an assets-only Worker (no script) that
+# serves the prerendered Nuxt output. The site is 100% static — no runtime code.
 name = "mgflooring"
 compatibility_date = "2025-01-01"
 
-# `nuxt generate` writes the static site here.
-pages_build_output_dir = ".output/public"
+[assets]
+# `npm run build` (static Nitro preset) writes the prerendered site here.
+directory = ".output/public"
+# Serve our generated 404.html for unknown paths.
+not_found_handling = "404-page"

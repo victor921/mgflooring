@@ -7,8 +7,8 @@
     "generate": "NITRO_PRESET=static nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && wrangler pages deploy",
-    "cf:preview": "npm run generate && wrangler pages dev"
+    "deploy": "npm run generate && wrangler deploy",
+    "cf:preview": "npm run generate && wrangler dev"
   },
   "dependencies": {
     "nuxt": "^3.14.1592",
