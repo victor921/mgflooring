@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "work": "Proyectos",
+    "reviews": "Opiniones",
+    "contact": "Contacto",
+    "quote": "Pedir presupuesto"
+  },
+  "common": {
+    "getQuote": "Pedir presupuesto",
+    "requestQuote": "Solicitar presupuesto",
+    "viewWork": "Ver proyectos",
+    "allProjects": "Todos los proyectos",
+    "moreReviews": "Más opiniones",
+    "before": "Antes",
+    "after": "Después",
+    "serving": "Damos servicio en {area}"
+  },
+  "home": {
+    "meta": {
+      "est": "Desde 2009",
+      "materials": "Mármol · Granito · Travertino",
+      "serving": "Servicio en {area}",
+      "free": "Presupuesto gratis"
+    },
+    "hero": {
+      "headline": "Colocamos, fabricamos y restauramos piedra, mármol y suelos.",
+      "intro": "Un taller especializado en suelos y piedra natural. De la losa en bruto a una superficie impecable y acabada — hecha para durar en {area}.",
+      "alt": "Losa de mármol Calacatta pulido"
+    },
+    "disciplines": {
+      "label": "Qué hacemos",
+      "title": "Un solo taller para suelos y piedra.",
+      "items": {
+        "d1": { "title": "Suelos de piedra y mármol", "body": "Suelos de Carrara, Calacatta, basalto y travertino — cortados, colocados y acabados a mano." },
+        "d2": { "title": "Granito y encimeras", "body": "Encimeras, lavabos y paredes decorativas fabricadas e instaladas al milímetro." },
+        "d3": { "title": "Madera y cerámica", "body": "Tablas anchas, espiga y gran formato para suelos y zonas húmedas." },
+        "d4": { "title": "Restauración y pulido", "body": "Rebaje, abrillantado, pulido y sellado — devolviendo la vida a la piedra apagada." }
+      }
+    },
+    "work": {
+      "label": "Proyectos destacados",
+      "title": "De la losa en bruto a la superficie acabada."
+    },
+    "stats": {
+      "s1": { "unit": "años", "label": "De trabajo en piedra" },
+      "s2": { "unit": "proyectos", "label": "Suelos y superficies" },
+      "s3": { "unit": "valoración", "label": "Media de opiniones" },
+      "s4": { "unit": "%", "label": "Presupuesto sin compromiso" }
+    },
+    "cta": {
+      "label": "Empieza tu proyecto",
+      "title": "Hablemos de tus suelos y tu piedra."
+    }
+  },
+  "work": {
+    "label": "Proyectos destacados",
+    "h1": "Antes y después. De la losa en bruto a la superficie acabada.",
+    "intro": "Arrastra cualquier divisor para ver la diferencia. Cada proyecto es trabajo real para clientes reales.",
+    "filters": {
+      "All": "Todos",
+      "Marble": "Mármol",
+      "Granite": "Granito",
+      "Stone": "Piedra",
+      "Flooring": "Suelos"
+    }
+  },
+  "reviews": {
+    "label": "Opiniones",
+    "h1": "De confianza en hogares de {area}.",
+    "count": "De más de {n} clientes"
+  },
+  "contact": {
+    "label": "Contacto",
+    "h1": "Pide tu presupuesto gratis.",
+    "intro": "Cuéntanos sobre tu espacio — metros cuadrados, materiales, plazos — y te responderemos en un día laborable.",
+    "form": {
+      "name": "Nombre",
+      "namePh": "Ana García",
+      "email": "Correo electrónico",
+      "emailPh": "ana{'@'}email.com",
+      "phone": "Teléfono (opcional)",
+      "phonePh": "600 123 456",
+      "material": "Material",
+      "details": "Detalles del proyecto",
+      "detailsPh": "Cuéntanos sobre tu espacio, materiales y plazos…",
+      "send": "Enviar mensaje",
+      "sending": "Enviando…"
+    },
+    "success": {
+      "label": "Enviado",
+      "title": "Gracias — tu mensaje está en camino.",
+      "body": "Nos pondremos en contacto en un día laborable."
+    },
+    "error": {
+      "generic": "Algo ha fallado. Por favor, llámanos o escríbenos directamente.",
+      "notConfigured": "Formulario aún sin conectar. Añade tu ID de Formspree en site.config.ts."
+    },
+    "aside": {
+      "prefer": "¿Prefieres hablar?",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "hours": "Horario",
+      "area": "Zona de servicio"
+    },
+    "services": {
+      "marble": "Mármol",
+      "granite": "Granito",
+      "stone": "Travertino / piedra",
+      "flooring": "Suelos",
+      "restoration": "Restauración",
+      "unsure": "Aún no lo sé"
+    }
+  },
+  "footer": {
+    "tagline": "Suelos y piedra, con un acabado impecable.",
+    "index": "Índice",
+    "contact": "Contacto",
+    "bottomTagline": "Suelos · Mármol · Granito · Piedra natural"
+  },
+  "error": {
+    "code": "Error {code}",
+    "title": "Esta página se ha perdido.",
+    "body": "Volvamos a pisar terreno firme.",
+    "home": "Volver al inicio"
+  },
+  "projects": {
+    "calacatta-bath": { "title": "Baño principal en Calacatta", "material": "Mármol Calacatta", "location": "Residencia en Hillcrest", "summary": "Calacatta de gran formato cortado, abujardado y pulido — de la losa en bruto a una superficie continua y veteada al detalle." },
+    "carrara-floor": { "title": "Suelo de entrada en Carrara", "material": "Mármol Carrara", "location": "Loft en el centro", "summary": "Un suelo de entrada desgastado, rehecho en Carrara y pulido a máquina hasta un acabado uniforme y espejado." },
+    "nero-feature": { "title": "Pared decorativa Nero Marquina", "material": "Mármol Nero", "location": "Ático moderno", "summary": "Mármol negro espectacular con vetas blancas, fabricado y colocado como elemento de suelo a techo." },
+    "graphite-counter": { "title": "Cocina en granito grafito", "material": "Granito Grafito", "location": "Cocina de chef", "summary": "Granito picado y apagado, restaurado mediante rebaje, pulido y sellado profesional." },
+    "travertine-patio": { "title": "Patio en travertino", "material": "Travertino envejecido", "location": "Patio ajardinado", "summary": "Hormigón agrietado renovado con travertino envejecido para un suelo cálido y resistente a la intemperie." },
+    "basalt-floor": { "title": "Suelo de galería en basalto", "material": "Basalto abujardado", "location": "Estudio de arte", "summary": "Losas de basalto en bruto abujardadas hasta un mate suave y uniforme — un suelo sereno y arquitectónico." }
+  },
+  "testimonials": {
+    "t1": { "quote": "Transformaron nuestro salón gastado en algo digno de una revista. Los suelos de roble blanco son impecables y el equipo fue meticuloso de principio a fin.", "detail": "Suelos de toda la vivienda" },
+    "t2": { "quote": "El trabajo en mármol de nuestro baño principal es precioso. Nos ayudaron a elegir la losa, se encargaron de todo y dejaron la obra impecable cada día.", "detail": "Baño en mármol" },
+    "t3": { "quote": "Precios honestos, sin sorpresas, y la entrada en pizarra quedó mejor de lo que imaginábamos. Ya los hemos contratado para el patio.", "detail": "Pizarra y piedra" },
+    "t4": { "quote": "Nuestras viejas encimeras de granito parecían muertas. Tras su restauración brillan como nuevas — nos ahorró miles frente a cambiarlas.", "detail": "Restauración de piedra" },
+    "t5": { "quote": "Una artesanía que ya casi no se ve. El suelo en espiga de nuestra cocina es una joya y todo el mundo pregunta quién lo hizo.", "detail": "Madera en espiga" },
+    "t6": { "quote": "Profesionales, puntuales y con un dominio real de la piedra natural. La comunicación fue excelente durante todo el proyecto.", "detail": "Patio en travertino" }
+  },
+  "seo": {
+    "home": { "title": "{name} — Suelos, Mármol y Piedra Natural", "description": "{name} diseña e instala suelos premium, piedra natural y acabados de superficie — madera, cerámica, mármol y trabajos a medida hechos para durar." },
+    "work": { "title": "Proyectos — Transformaciones en Piedra Antes y Después", "description": "Trabajos reales de antes y después: mármol Carrara, Calacatta y Nero, granito, travertino y restauración de suelos por {name}." },
+    "reviews": { "title": "Opiniones — Lo Que Dicen Nuestros Clientes", "description": "Lee las opiniones de clientes. {name} tiene una media de {avg}★ en suelos, mármol y piedra natural." },
+    "contact": { "title": "Contacto — Pide tu Presupuesto Gratis", "description": "Solicita un presupuesto gratis y sin compromiso a {name}. Llama al {phone} o envíanos los detalles de tu proyecto." }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "quote": "Get a quote"
+  },
+  "common": {
+    "getQuote": "Get a quote",
+    "requestQuote": "Request a quote",
+    "viewWork": "View work",
+    "allProjects": "All projects",
+    "moreReviews": "More reviews",
+    "before": "Before",
+    "after": "After",
+    "serving": "Serving {area}"
+  },
+  "home": {
+    "meta": {
+      "est": "Est. 2009",
+      "materials": "Marble · Granite · Travertine",
+      "serving": "Serving {area}",
+      "free": "Free quotes"
+    },
+    "hero": {
+      "headline": "We lay, fabricate, and restore stone, marble, and floors.",
+      "intro": "A specialist flooring and natural-stone workshop. From raw slab to a flawless, finished surface — built to last in {area}.",
+      "alt": "Polished Calacatta marble slab"
+    },
+    "disciplines": {
+      "label": "What we do",
+      "title": "One workshop for floors and stone alike.",
+      "items": {
+        "d1": { "title": "Stone & Marble Flooring", "body": "Carrara, Calacatta, basalt, and travertine floors — cut, set, and finished by hand." },
+        "d2": { "title": "Granite & Surfaces", "body": "Countertops, vanities, and feature walls fabricated and installed to the millimetre." },
+        "d3": { "title": "Hardwood & Tile", "body": "Wide-plank, herringbone, and large-format tile for floors and wet areas." },
+        "d4": { "title": "Restoration & Polishing", "body": "Grinding, honing, polishing, and sealing — bringing dull stone back to life." }
+      }
+    },
+    "work": {
+      "label": "Selected work",
+      "title": "Raw slab → finished surface."
+    },
+    "stats": {
+      "s1": { "unit": "years", "label": "Of stonework" },
+      "s2": { "unit": "projects", "label": "Floors & surfaces" },
+      "s3": { "unit": "rating", "label": "Average review" },
+      "s4": { "unit": "%", "label": "Quote, no obligation" }
+    },
+    "cta": {
+      "label": "Start a project",
+      "title": "Let’s talk about your floors and stone."
+    }
+  },
+  "work": {
+    "label": "Selected work",
+    "h1": "Before & after. Raw slab to finished surface.",
+    "intro": "Drag any divider to reveal the difference. Every project is real work for real homeowners.",
+    "filters": {
+      "All": "All",
+      "Marble": "Marble",
+      "Granite": "Granite",
+      "Stone": "Stone",
+      "Flooring": "Flooring"
+    }
+  },
+  "reviews": {
+    "label": "Reviews",
+    "h1": "Trusted in homes across {area}.",
+    "count": "From {n}+ clients"
+  },
+  "contact": {
+    "label": "Contact",
+    "h1": "Get a free quote.",
+    "intro": "Tell us about your space — square footage, materials, timeline — and we’ll respond within one business day.",
+    "form": {
+      "name": "Name",
+      "namePh": "Jane Doe",
+      "email": "Email",
+      "emailPh": "jane{'@'}email.com",
+      "phone": "Phone (optional)",
+      "phonePh": "(555) 123-4567",
+      "material": "Material",
+      "details": "Project details",
+      "detailsPh": "Tell us about your space, materials, and timeline…",
+      "send": "Send message",
+      "sending": "Sending…"
+    },
+    "success": {
+      "label": "Sent",
+      "title": "Thank you — your message is on its way.",
+      "body": "We’ll be in touch within one business day."
+    },
+    "error": {
+      "generic": "Something went wrong. Please call or email us directly.",
+      "notConfigured": "Form not yet connected. Add your Formspree ID in site.config.ts."
+    },
+    "aside": {
+      "prefer": "Prefer to talk?",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Hours",
+      "area": "Service area"
+    },
+    "services": {
+      "marble": "Marble",
+      "granite": "Granite",
+      "stone": "Travertine / stone",
+      "flooring": "Flooring",
+      "restoration": "Restoration",
+      "unsure": "Not sure yet"
+    }
+  },
+  "footer": {
+    "tagline": "Floors & stonework, done beautifully.",
+    "index": "Index",
+    "contact": "Contact",
+    "bottomTagline": "Flooring · Marble · Granite · Natural Stone"
+  },
+  "error": {
+    "code": "Error {code}",
+    "title": "This page wandered off.",
+    "body": "Let’s get you back on solid ground.",
+    "home": "Back to home"
+  },
+  "projects": {
+    "calacatta-bath": { "title": "Calacatta Master Bath", "material": "Calacatta Marble", "location": "Hillcrest residence", "summary": "Large-format Calacatta cut, honed, and polished — from raw slab to a seamless, book-matched surface." },
+    "carrara-floor": { "title": "Carrara Entry Floor", "material": "Carrara Marble", "location": "Downtown loft", "summary": "A worn entry floor relaid in Carrara and machine-polished to an even, mirror-clean finish." },
+    "nero-feature": { "title": "Nero Marquina Feature Wall", "material": "Nero Marble", "location": "Modern penthouse", "summary": "Dramatic black marble with white veining, fabricated and set as a floor-to-ceiling statement." },
+    "graphite-counter": { "title": "Graphite Granite Kitchen", "material": "Graphite Granite", "location": "Chef’s kitchen", "summary": "Etched, dull granite restored through professional grinding, polishing, and sealing." },
+    "travertine-patio": { "title": "Travertine Courtyard", "material": "Tumbled Travertine", "location": "Garden courtyard", "summary": "Cracked concrete resurfaced with tumbled travertine for a warm, weather-ready floor." },
+    "basalt-floor": { "title": "Basalt Gallery Floor", "material": "Honed Basalt", "location": "Art studio", "summary": "Raw basalt slabs honed to a soft, uniform matte — a calm, architectural floor." }
+  },
+  "testimonials": {
+    "t1": { "quote": "They transformed our worn-out living room into something out of a magazine. The white oak floors are flawless and the crew was meticulous start to finish.", "detail": "Whole-home flooring" },
+    "t2": { "quote": "The marble work in our master bath is stunning. They helped us pick the slab, handled everything, and left the site spotless every single day.", "detail": "Marble bathroom" },
+    "t3": { "quote": "Honest pricing, no surprises, and the slate entry looks better than we imagined. We’ve already booked them for the patio.", "detail": "Slate & stonework" },
+    "t4": { "quote": "Our old granite counters looked dead. After their restoration they shine like new — saved us thousands versus replacement.", "detail": "Stone restoration" },
+    "t5": { "quote": "Craftsmanship you rarely see anymore. The herringbone floor in our kitchen is a showpiece and everyone asks who did it.", "detail": "Herringbone hardwood" },
+    "t6": { "quote": "Professional, punctual, and genuinely skilled with natural stone. Communication was excellent throughout the project.", "detail": "Travertine patio" }
+  },
+  "seo": {
+    "home": { "title": "{name} — Flooring, Marble & Natural Stone", "description": "{name} designs and installs premium flooring, natural stone, and surface finishes — hardwood, tile, marble, and custom stonework built to last." },
+    "work": { "title": "Work — Before & After Stone Transformations", "description": "Real before-and-after stonework: Carrara, Calacatta, Nero marble, granite, travertine, and floor restoration by {name}." },
+    "reviews": { "title": "Reviews — What Our Clients Say", "description": "Read client reviews. {name} averages {avg}★ for flooring, marble, and natural-stone work." },
+    "contact": { "title": "Contact — Get a Free Flooring & Stone Quote", "description": "Request a free, no-obligation quote from {name}. Call {phone} or send your project details." }
+  }
+}
