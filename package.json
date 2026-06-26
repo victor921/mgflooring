@@ -2,13 +2,13 @@
   "name": "mgflooring",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "NITRO_PRESET=static nuxt generate",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "NITRO_PRESET=static nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "nuxt generate && wrangler pages deploy",
-    "cf:preview": "nuxt generate && wrangler pages dev"
+    "deploy": "npm run generate && wrangler pages deploy",
+    "cf:preview": "npm run generate && wrangler pages dev"
   },
   "dependencies": {
     "nuxt": "^3.14.1592",
