@@ -41,6 +41,11 @@ export default defineNuxtConfig({
   // Static generation = real HTML per page = best SEO
   ssr: true,
   nitro: {
+    // Force a pure-static build (HTML only — no Worker). The site is 100%
+    // prerendered, so we don't want Cloudflare's `cloudflare-pages` preset
+    // (auto-picked when CF_PAGES=1) injecting a `_worker.js` with a reserved
+    // `ASSETS` binding, which Cloudflare Pages rejects at deploy time.
+    preset: 'static',
     prerender: {
       crawlLinks: true,
       routes: ['/', '/before-after', '/testimonials', '/contact'],
