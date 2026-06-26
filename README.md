@@ -93,13 +93,38 @@ Edit reviews in [`data/testimonials.ts`](./data/testimonials.ts).
 > [Google Search Console](https://search.google.com/search-console) to speed up
 > indexing.
 
-## 🚀 Deploy
+## 🚀 Deploy — Cloudflare Pages
 
-`npm run generate` outputs a static `.output/public/` folder — host it anywhere:
+`npm run generate` outputs a static `.output/public/` folder. This site is set up
+to deploy to **Cloudflare Pages** via Wrangler (config in
+[`wrangler.toml`](./wrangler.toml)).
 
-- **Netlify / Vercel / Cloudflare Pages**: connect the repo, build command
-  `npm run generate`, publish directory `.output/public`.
-- Or upload `.output/public` to any static host / S3 / nginx.
+**One-off / CLI deploy (build locally, upload):**
+
+```bash
+npx wrangler login     # first time only — opens the browser to authorize
+npm run deploy         # = nuxt generate && wrangler pages deploy
+```
+
+The first deploy prompts to create the Pages project (accept the default name
+`mgflooring`). It prints a `*.pages.dev` URL when done. To preview the production
+build locally on Cloudflare's runtime: `npm run cf:preview`.
+
+**Git-connected deploy (Cloudflare builds on every push) — recommended for prod:**
+In the Cloudflare dashboard → *Workers & Pages* → *Create* → *Pages* → connect this
+repo, then set:
+
+| Setting | Value |
+| --- | --- |
+| Build command | `npm run generate` |
+| Build output directory | `.output/public` |
+| Node version | `22` (env var `NODE_VERSION=22`) |
+
+Add your custom domain under the project's *Custom domains* tab, then update `url`
+in [`site.config.ts`](./site.config.ts) to match (canonical URLs + sitemap).
+
+> Prefer another host? `.output/public` is plain static files — upload it to
+> Netlify, Vercel, S3, nginx, etc.
 
 ## 🗂️ Project structure
 

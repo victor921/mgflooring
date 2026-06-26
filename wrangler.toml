@@ -1,0 +1,8 @@
+# Cloudflare Pages config for the mgflooring static site.
+# The site is fully prerendered (Nuxt SSG) — Pages serves the static
+# output directly, no Worker runtime needed.
+name = "mgflooring"
+compatibility_date = "2025-01-01"
+
+# `nuxt generate` writes the static site here.
+pages_build_output_dir = ".output/public"
