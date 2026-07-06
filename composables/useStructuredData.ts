@@ -18,6 +18,8 @@ export function useStructuredData(node: Record<string, any>) {
 
 /** Base LocalBusiness node used site-wide (strong local SEO signal). */
 export function localBusinessNode(extra: Record<string, any> = {}) {
+  const sameAs = Object.values(site.social).filter(Boolean)
+  const hasGeo = site.geo.lat !== 0 || site.geo.lng !== 0
   return {
     '@context': 'https://schema.org',
     '@type': 'HomeAndConstructionBusiness',
@@ -27,7 +29,7 @@ export function localBusinessNode(extra: Record<string, any> = {}) {
     url: site.url,
     telephone: `+${site.phoneHref.replace(/\D/g, '')}`,
     email: site.email,
-    image: `${site.url}/projects/hero.svg`,
+    image: `${site.url}/images/hero-living.jpg`,
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
@@ -39,6 +41,10 @@ export function localBusinessNode(extra: Record<string, any> = {}) {
     },
     areaServed: site.serviceArea,
     openingHours: 'Mo-Fr 08:00-18:00',
+    ...(sameAs.length ? { sameAs } : {}),
+    ...(hasGeo
+      ? { geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng } }
+      : {}),
     ...extra,
   }
 }

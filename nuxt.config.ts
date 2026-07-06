@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/before-after', '/testimonials', '/contact'],
+      routes: ['/', '/residential', '/commercial', '/before-after', '/testimonials', '/contact'],
     },
   },
 

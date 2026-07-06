@@ -8,6 +8,8 @@ const socials = computed(() =>
 )
 const links = [
   { to: '/', key: 'home' },
+  { to: '/residential', key: 'residential' },
+  { to: '/commercial', key: 'commercial' },
   { to: '/before-after', key: 'work' },
   { to: '/testimonials', key: 'reviews' },
   { to: '/contact', key: 'contact' },

@@ -1,7 +1,9 @@
 {
   "nav": {
     "home": "Inicio",
-    "work": "Proyectos",
+    "residential": "Residencial",
+    "commercial": "Comercial",
+    "work": "Antes y después",
     "reviews": "Opiniones",
     "contact": "Contacto",
     "quote": "Pedir presupuesto"
@@ -14,39 +16,84 @@
     "moreReviews": "Más opiniones",
     "before": "Antes",
     "after": "Después",
-    "serving": "Damos servicio en {area}"
+    "serving": "Damos servicio en {area}",
+    "callUs": "Llámanos",
+    "freeQuote": "Presupuesto gratis"
   },
   "home": {
     "meta": {
       "est": "Desde 2009",
-      "materials": "Mármol · Granito · Travertino",
+      "materials": "Residencial · Comercial",
       "serving": "Servicio en {area}",
       "free": "Presupuesto gratis"
     },
     "hero": {
-      "headline": "Colocamos, fabricamos y restauramos piedra, mármol y suelos.",
-      "intro": "Un taller especializado en suelos y piedra natural. De la losa en bruto a una superficie impecable y acabada — hecha para durar en {area}.",
-      "alt": "Losa de mármol Calacatta pulido"
+      "headline": "Suelos e interiores preciosos, instalados como se debe.",
+      "intro": "Suelos, islas de cocina, baños y piedra natural — diseñados e instalados por nuestro propio equipo para hogares y espacios comerciales en {area}.",
+      "alt": "Salón con suelo de tablas anchas instalado por MG Flooring",
+      "points": {
+        "p1": "Presupuestos gratis y sin compromiso — respuesta en un día laborable",
+        "p2": "Con licencia y seguro, más de 15 años de experiencia",
+        "p3": "Instalaciones limpias y puntuales por nuestro propio equipo"
+      }
     },
     "disciplines": {
       "label": "Qué hacemos",
-      "title": "Un solo taller para suelos y piedra.",
+      "title": "Instalación y diseño de interiores, bajo un mismo techo.",
       "items": {
-        "d1": { "title": "Suelos de piedra y mármol", "body": "Suelos de Carrara, Calacatta, basalto y travertino — cortados, colocados y acabados a mano." },
-        "d2": { "title": "Granito y encimeras", "body": "Encimeras, lavabos y paredes decorativas fabricadas e instaladas al milímetro." },
-        "d3": { "title": "Madera y cerámica", "body": "Tablas anchas, espiga y gran formato para suelos y zonas húmedas." },
-        "d4": { "title": "Restauración y pulido", "body": "Rebaje, abrillantado, pulido y sellado — devolviendo la vida a la piedra apagada." }
+        "d1": { "title": "Instalación de suelos", "body": "Madera, mármol, porcelánico de gran formato y piedra natural — medidos, colocados y acabados por nuestro propio equipo." },
+        "d2": { "title": "Cocinas e islas", "body": "Islas en cascada, encimeras y superficies completas de cocina fabricadas e instaladas al milímetro." },
+        "d3": { "title": "Baños", "body": "Duchas de obra, lavabos y reformas completas de baño — impermeabilizadas y hechas para durar." },
+        "d4": { "title": "Diseño de interiores y restauración", "body": "Selección de materiales, distribución y acabados — además de rebaje, pulido y sellado para devolver la vida a suelos existentes." }
+      }
+    },
+    "sectors": {
+      "label": "Con quién trabajamos",
+      "title": "Dos mercados. El mismo nivel de oficio.",
+      "residential": {
+        "label": "Para hogares",
+        "title": "Residencial",
+        "body": "Cocinas, baños y suelos completos para casas y apartamentos en todo el sur de Florida.",
+        "cta": "Ver residencial"
+      },
+      "commercial": {
+        "label": "Para empresas",
+        "title": "Comercial",
+        "body": "Oficinas, restaurantes y espacios públicos de alto tráfico — incluido nuestro trabajo continuo en el Aeropuerto Internacional de Miami.",
+        "cta": "Ver comercial"
       }
     },
     "work": {
       "label": "Proyectos destacados",
-      "title": "De la losa en bruto a la superficie acabada."
+      "title": "Proyectos reales, antes y después."
     },
     "stats": {
-      "s1": { "unit": "años", "label": "De trabajo en piedra" },
-      "s2": { "unit": "proyectos", "label": "Suelos y superficies" },
+      "s1": { "unit": "años", "label": "Instalando suelos e interiores" },
+      "s2": { "unit": "proyectos", "label": "Hogares y empresas" },
       "s3": { "unit": "valoración", "label": "Media de opiniones" },
       "s4": { "unit": "%", "label": "Presupuesto sin compromiso" }
+    },
+    "steps": {
+      "label": "Cómo funciona",
+      "title": "Tres pasos sencillos hacia tus nuevos suelos.",
+      "note": "Gratis y sin compromiso — la mayoría de presupuestos salen en un día laborable.",
+      "items": {
+        "s1": { "title": "Cuéntanos tu proyecto", "body": "Llama o envía el formulario con unos pocos detalles — la estancia, el tamaño aproximado y el material que tienes en mente." },
+        "s2": { "title": "Recibe un presupuesto gratis", "body": "Visitamos, medimos y te enviamos un presupuesto claro y detallado. Sin presión y sin compromiso." },
+        "s3": { "title": "Instalamos", "body": "Nuestro propio equipo instala según el calendario, mantiene la obra limpia y te enseña el trabajo terminado." }
+      }
+    },
+    "faq": {
+      "label": "Preguntas",
+      "title": "Preguntas frecuentes.",
+      "more": "¿Tienes otra pregunta? Llámanos al",
+      "items": {
+        "f1": { "q": "¿Ofrecéis presupuestos gratis?", "a": "Sí — todos los presupuestos son gratis y sin compromiso. Envía el formulario o llama al {phone} y te responderemos en un día laborable." },
+        "f2": { "q": "¿Qué instaláis?", "a": "Suelos completos, islas y encimeras de cocina y reformas integrales de baño — madera, mármol, porcelánico y piedra natural. Somos instaladores y diseñadores de interiores, no una tienda de materiales: te ayudamos a elegir y conseguir el material, y luego lo construimos." },
+        "f3": { "q": "¿En qué zonas trabajáis?", "a": "Damos servicio en {area}, tanto en viviendas como en espacios comerciales — nuestros equipos comerciales trabajan actualmente en el Aeropuerto Internacional de Miami." },
+        "f4": { "q": "¿Cuánto tarda una instalación?", "a": "La mayoría de estancias llevan de 2 a 5 días según el tamaño y el material. Recibirás un calendario claro con tu presupuesto, y lo cumplimos." },
+        "f5": { "q": "¿Tenéis licencia y seguro?", "a": "Sí — con licencia y seguro completos. Podemos facilitarte referencias de clientes anteriores si las necesitas." }
+      }
     },
     "cta": {
       "label": "Empieza tu proyecto",
@@ -54,15 +101,75 @@
     }
   },
   "work": {
-    "label": "Proyectos destacados",
-    "h1": "Antes y después. De la losa en bruto a la superficie acabada.",
-    "intro": "Arrastra cualquier divisor para ver la diferencia. Cada proyecto es trabajo real para clientes reales.",
+    "label": "Antes y después",
+    "h1": "Arrastra el divisor. Mira la diferencia.",
+    "intro": "Transformaciones reales de proyectos reales — hogares, oficinas y restaurantes en todo el sur de Florida. Arrastra cualquier divisor para comparar.",
     "filters": {
-      "All": "Todos",
-      "Marble": "Mármol",
-      "Granite": "Granito",
-      "Stone": "Piedra",
-      "Flooring": "Suelos"
+      "all": "Todos los proyectos",
+      "residential": "Residencial",
+      "commercial": "Comercial"
+    }
+  },
+  "residential": {
+    "label": "Residencial",
+    "h1": "Tu hogar, con un acabado precioso.",
+    "intro": "Desde un solo baño hasta los suelos de toda la vivienda: diseñamos e instalamos suelos, islas de cocina y baños para hogares en {area} — con un mismo equipo desde la primera medición hasta la entrega final.",
+    "heroAlt": "Escalera y suelos de madera en una vivienda reformada en Miami",
+    "services": {
+      "label": "Servicios residenciales",
+      "title": "Qué hacemos por tu hogar.",
+      "items": {
+        "s1": { "title": "Suelos para toda la vivienda", "body": "Madera, espiga, mármol y porcelánico de gran formato — aportados por ti o elegidos con nuestro asesoramiento de diseño, e instalados por nosotros." },
+        "s2": { "title": "Islas y encimeras de cocina", "body": "Islas en cascada, encimeras y frentes fabricados y ajustados al milímetro." },
+        "s3": { "title": "Reformas de baño", "body": "Duchas de obra, piedra de suelo a techo, lavabos y suelo radiante — con impermeabilización completa." },
+        "s4": { "title": "Diseño de interiores", "body": "¿No tienes claro qué le va a tu espacio? Te ayudamos a elegir materiales, distribuciones y acabados que funcionen juntos." }
+      }
+    },
+    "gallery": {
+      "label": "Hogares recientes",
+      "title": "Un vistazo a nuestro trabajo terminado.",
+      "alts": {
+        "g1": "Cocina blanca con isla de mármol instalada por MG Flooring",
+        "g2": "Baño de lujo con bañera exenta y suelos de piedra",
+        "g3": "Dormitorio con suelo de madera oscura"
+      }
+    },
+    "featured": {
+      "label": "Transformación destacada",
+      "title": "Un baño anticuado, reconstruido desde el suelo."
+    }
+  },
+  "commercial": {
+    "label": "Comercial",
+    "h1": "Suelos hechos para el tráfico intenso y los plazos ajustados.",
+    "intro": "Oficinas, restaurantes, comercios e infraestructura pública en todo el sur de Florida. Planificamos según tu horario, trabajamos por fases y entregamos superficies que aguantan el uso real.",
+    "heroAlt": "Oficina moderna con suelo continuo pulido",
+    "cta": "Solicitar visita de obra",
+    "mia": {
+      "label": "Cliente destacado",
+      "title": "Aeropuerto Internacional de Miami",
+      "body": "Somos contratista activo de suelos en MIA: instalamos y restauramos superficies de alta durabilidad en zonas de terminal — trabajo nocturno por fases, estricto cumplimiento de seguridad y cero interrupciones para los pasajeros.",
+      "alt": "Avión en una terminal del Aeropuerto Internacional de Miami",
+      "stats": {
+        "m1": { "value": "MIA", "label": "Proyecto activo" },
+        "m2": { "value": "24/7", "label": "Equipos nocturnos" },
+        "m3": { "value": "100%", "label": "Cumplimiento de seguridad" }
+      }
+    },
+    "capabilities": {
+      "label": "Capacidades",
+      "title": "Preparados para condiciones comerciales.",
+      "note": "Con licencia y seguro para obra comercial. Referencias y certificados de seguro disponibles bajo petición.",
+      "items": {
+        "c1": { "title": "Aeropuertos y espacios públicos", "body": "Terrazo, piedra y porcelánico de alta durabilidad para terminales, vestíbulos y zonas de tránsito — instalados por fases sin parar la operación." },
+        "c2": { "title": "Oficinas y vestíbulos", "body": "Hormigón pulido, piedra y sistemas de madera que causan buena impresión y aguantan el tráfico diario." },
+        "c3": { "title": "Restaurantes y comercios", "body": "Instalaciones rápidas entre la firma del local y la apertura, con materiales aptos para derrames y tráfico intenso." },
+        "c4": { "title": "Mantenimiento y restauración", "body": "Programas periódicos de rebaje, pulido y sellado que mantienen los suelos comerciales como nuevos." }
+      }
+    },
+    "featured": {
+      "label": "Transformación destacada",
+      "title": "Una oficina completa, renovada de principio a fin."
     }
   },
   "reviews": {
@@ -81,11 +188,12 @@
       "emailPh": "ana{'@'}email.com",
       "phone": "Teléfono (opcional)",
       "phonePh": "600 123 456",
-      "material": "Material",
+      "material": "Tipo de proyecto",
       "details": "Detalles del proyecto",
       "detailsPh": "Cuéntanos sobre tu espacio, materiales y plazos…",
       "send": "Enviar mensaje",
-      "sending": "Enviando…"
+      "sending": "Enviando…",
+      "note": "Gratis y sin compromiso. Respondemos en un día laborable."
     },
     "success": {
       "label": "Enviado",
@@ -104,11 +212,11 @@
       "area": "Zona de servicio"
     },
     "services": {
-      "marble": "Mármol",
-      "granite": "Granito",
-      "stone": "Travertino / piedra",
-      "flooring": "Suelos",
-      "restoration": "Restauración",
+      "flooring": "Instalación de suelos",
+      "kitchen": "Isla / encimeras de cocina",
+      "bathroom": "Reforma de baño",
+      "commercial": "Proyecto comercial",
+      "design": "Diseño de interiores",
       "unsure": "Aún no lo sé"
     }
   },
@@ -125,12 +233,12 @@
     "home": "Volver al inicio"
   },
   "projects": {
-    "calacatta-bath": { "title": "Baño principal en Calacatta", "material": "Mármol Calacatta", "location": "Residencia en Hillcrest", "summary": "Calacatta de gran formato cortado, abujardado y pulido — de la losa en bruto a una superficie continua y veteada al detalle." },
-    "carrara-floor": { "title": "Suelo de entrada en Carrara", "material": "Mármol Carrara", "location": "Loft en el centro", "summary": "Un suelo de entrada desgastado, rehecho en Carrara y pulido a máquina hasta un acabado uniforme y espejado." },
-    "nero-feature": { "title": "Pared decorativa Nero Marquina", "material": "Mármol Nero", "location": "Ático moderno", "summary": "Mármol negro espectacular con vetas blancas, fabricado y colocado como elemento de suelo a techo." },
-    "graphite-counter": { "title": "Cocina en granito grafito", "material": "Granito Grafito", "location": "Cocina de chef", "summary": "Granito picado y apagado, restaurado mediante rebaje, pulido y sellado profesional." },
-    "travertine-patio": { "title": "Patio en travertino", "material": "Travertino envejecido", "location": "Patio ajardinado", "summary": "Hormigón agrietado renovado con travertino envejecido para un suelo cálido y resistente a la intemperie." },
-    "basalt-floor": { "title": "Suelo de galería en basalto", "material": "Basalto abujardado", "location": "Estudio de arte", "summary": "Losas de basalto en bruto abujardadas hasta un mate suave y uniforme — un suelo sereno y arquitectónico." }
+    "kitchen-island": { "title": "Cocina con isla de mármol", "scope": "Isla y encimeras de cocina", "location": "Residencia en Coral Gables", "summary": "Una cocina vaciada y reconstruida en torno a una isla de mármol en cascada con veta continua — fabricada, colocada y sellada por nuestro equipo." },
+    "bath-remodel": { "title": "Reforma de baño principal", "scope": "Reforma integral de baño", "location": "Apartamento en Brickell", "summary": "Un baño anticuado demolido hasta la estructura y reconstruido: ducha de obra con mampara, doble lavabo de cuarzo y suelo porcelánico efecto madera." },
+    "herringbone-floor": { "title": "Espiga de roble blanco", "scope": "Suelos de toda la vivienda", "location": "Casa en Coconut Grove", "summary": "Tablas de pino desgastadas sustituidas por espiga de roble blanco colocada a mano en todas las zonas de estar." },
+    "living-floor": { "title": "Salón en tabla ancha", "scope": "Suelos y diseño", "location": "Apartamento en Key Biscayne", "summary": "Suelos anticuados sustituidos por roble de tabla ancha con una paleta de acabados elegida junto a los propietarios." },
+    "office-suite": { "title": "Renovación de oficina", "scope": "Suelos comerciales", "location": "Oficina en Brickell", "summary": "Una oficina cansada renovada con un sistema de suelo continuo pulido — instalado por fases en dos fines de semana, sin parar la actividad." },
+    "restaurant-wynwood": { "title": "Comedor en Wynwood", "scope": "Obra de restaurante", "location": "Restaurante en Wynwood", "summary": "Un local comercial desgastado convertido en un comedor acogedor con suelos de madera técnica oscura aptos para servicio intenso." }
   },
   "testimonials": {
     "t1": { "quote": "Transformaron nuestro salón gastado en algo digno de una revista. Los suelos de roble blanco son impecables y el equipo fue meticuloso de principio a fin.", "detail": "Suelos de toda la vivienda" },
@@ -141,9 +249,11 @@
     "t6": { "quote": "Profesionales, puntuales y con un dominio real de la piedra natural. La comunicación fue excelente durante todo el proyecto.", "detail": "Patio en travertino" }
   },
   "seo": {
-    "home": { "title": "{name} — Suelos, Mármol y Piedra Natural", "description": "{name} diseña e instala suelos premium, piedra natural y acabados de superficie — madera, cerámica, mármol y trabajos a medida hechos para durar." },
-    "work": { "title": "Proyectos — Transformaciones en Piedra Antes y Después", "description": "Trabajos reales de antes y después: mármol Carrara, Calacatta y Nero, granito, travertino y restauración de suelos por {name}." },
-    "reviews": { "title": "Opiniones — Lo Que Dicen Nuestros Clientes", "description": "Lee las opiniones de clientes. {name} tiene una media de {avg}★ en suelos, mármol y piedra natural." },
+    "home": { "title": "{name} — Instalación de Suelos e Interiores en Miami", "description": "{name} instala suelos, islas de cocina, baños y piedra natural para hogares y empresas en Miami-Dade — incluido el Aeropuerto Internacional de Miami. Presupuestos gratis." },
+    "residential": { "title": "Suelos, Cocinas y Baños Residenciales en Miami", "description": "{name} diseña e instala suelos completos, islas de cocina y reformas de baño en {area}. Presupuestos gratis y sin compromiso." },
+    "commercial": { "title": "Contratista de Suelos Comerciales en Miami — Oficinas, Restaurantes y MIA", "description": "{name} instala y restaura suelos comerciales en el sur de Florida — oficinas, restaurantes, comercios y trabajo continuo en el Aeropuerto Internacional de Miami." },
+    "work": { "title": "Antes y Después — Transformaciones Reales de Suelos y Reformas", "description": "Proyectos de antes y después con comparador de {name}: cocinas, baños, suelos completos, oficinas y restaurantes en Miami." },
+    "reviews": { "title": "Opiniones — Lo Que Dicen Nuestros Clientes", "description": "Lee las opiniones de clientes. {name} tiene una media de {avg}★ en suelos, cocinas y baños en Miami." },
     "contact": { "title": "Contacto — Pide tu Presupuesto Gratis", "description": "Solicita un presupuesto gratis y sin compromiso a {name}. Llama al {phone} o envíanos los detalles de tu proyecto." }
   }
 }

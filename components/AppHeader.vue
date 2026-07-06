@@ -1,10 +1,13 @@
 <script setup lang="ts">
 const open = ref(false)
+const site = useSite()
 const localePath = useLocalePath()
 const { t } = useI18n()
 
+// Wordmark links home, so the nav leads with the two markets
 const links = [
-  { to: '/', key: 'home' },
+  { to: '/residential', key: 'residential' },
+  { to: '/commercial', key: 'commercial' },
   { to: '/before-after', key: 'work' },
   { to: '/testimonials', key: 'reviews' },
   { to: '/contact', key: 'contact' },
@@ -23,7 +26,7 @@ watch(() => route.path, () => (open.value = false))
       </NuxtLink>
 
       <!-- Desktop nav -->
-      <nav class="hidden items-center gap-9 md:flex">
+      <nav class="hidden items-center gap-7 md:flex">
         <NuxtLink
           v-for="l in links"
           :key="l.to"
@@ -33,6 +36,9 @@ watch(() => route.path, () => (open.value = false))
         >{{ t(`nav.${l.key}`) }}</NuxtLink>
         <span class="h-4 w-px bg-line" />
         <LangSwitch />
+        <a :href="`tel:${site.phoneHref}`" class="text-sm font-semibold tracking-tight text-ink transition-opacity hover:opacity-60">
+          {{ site.phone }}
+        </a>
         <NuxtLink :to="localePath('/contact')" class="btn-solid !py-2">{{ t('nav.quote') }}</NuxtLink>
       </nav>
 
@@ -63,7 +69,8 @@ watch(() => route.path, () => (open.value = false))
           class="border-b border-line py-4 text-sm uppercase tracking-[0.12em] text-stone"
           active-class="!text-ink"
         >{{ t(`nav.${l.key}`) }}</NuxtLink>
-        <NuxtLink :to="localePath('/contact')" class="btn-solid my-4">{{ t('nav.quote') }}</NuxtLink>
+        <NuxtLink :to="localePath('/contact')" class="btn-solid mt-4">{{ t('nav.quote') }}</NuxtLink>
+        <a :href="`tel:${site.phoneHref}`" class="btn-outline mb-4 mt-3">{{ t('common.callUs') }} · {{ site.phone }}</a>
       </div>
     </nav>
   </header>

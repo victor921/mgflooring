@@ -1,7 +1,9 @@
 {
   "nav": {
     "home": "Home",
-    "work": "Work",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "work": "Before & After",
     "reviews": "Reviews",
     "contact": "Contact",
     "quote": "Get a quote"
@@ -14,39 +16,84 @@
     "moreReviews": "More reviews",
     "before": "Before",
     "after": "After",
-    "serving": "Serving {area}"
+    "serving": "Serving {area}",
+    "callUs": "Call us",
+    "freeQuote": "Free quote"
   },
   "home": {
     "meta": {
       "est": "Est. 2009",
-      "materials": "Marble · Granite · Travertine",
+      "materials": "Residential · Commercial",
       "serving": "Serving {area}",
       "free": "Free quotes"
     },
     "hero": {
-      "headline": "We lay, fabricate, and restore stone, marble, and floors.",
-      "intro": "A specialist flooring and natural-stone workshop. From raw slab to a flawless, finished surface — built to last in {area}.",
-      "alt": "Polished Calacatta marble slab"
+      "headline": "Beautiful floors and interiors, installed right.",
+      "intro": "Flooring, kitchen islands, bathrooms, and natural stone — designed and installed by our own crew for homes and commercial spaces across {area}.",
+      "alt": "Living room with wide-plank wood-look floor installed by MG Flooring",
+      "points": {
+        "p1": "Free, no-obligation quotes — reply within one business day",
+        "p2": "Licensed & insured, 15+ years of experience",
+        "p3": "Clean, on-time installs by our own crew"
+      }
     },
     "disciplines": {
       "label": "What we do",
-      "title": "One workshop for floors and stone alike.",
+      "title": "Installation and interior design, under one roof.",
       "items": {
-        "d1": { "title": "Stone & Marble Flooring", "body": "Carrara, Calacatta, basalt, and travertine floors — cut, set, and finished by hand." },
-        "d2": { "title": "Granite & Surfaces", "body": "Countertops, vanities, and feature walls fabricated and installed to the millimetre." },
-        "d3": { "title": "Hardwood & Tile", "body": "Wide-plank, herringbone, and large-format tile for floors and wet areas." },
-        "d4": { "title": "Restoration & Polishing", "body": "Grinding, honing, polishing, and sealing — bringing dull stone back to life." }
+        "d1": { "title": "Flooring Installation", "body": "Hardwood, marble, large-format porcelain, and natural stone floors — measured, laid, and finished by our own crew." },
+        "d2": { "title": "Kitchens & Islands", "body": "Waterfall islands, countertops, and full kitchen surfaces fabricated and installed to the millimetre." },
+        "d3": { "title": "Bathrooms", "body": "Walk-in showers, vanities, and complete bathroom remodels — waterproofed and built to last." },
+        "d4": { "title": "Interior Design & Restoration", "body": "Material selection, layout, and finish design — plus grinding, polishing, and sealing to bring existing floors back to life." }
+      }
+    },
+    "sectors": {
+      "label": "Who we work with",
+      "title": "Two markets. The same standard of craft.",
+      "residential": {
+        "label": "For homeowners",
+        "title": "Residential",
+        "body": "Kitchens, bathrooms, and whole-home flooring for houses and condos across South Florida.",
+        "cta": "Explore residential"
+      },
+      "commercial": {
+        "label": "For businesses",
+        "title": "Commercial",
+        "body": "Offices, restaurants, and high-traffic public spaces — including ongoing work at Miami International Airport.",
+        "cta": "Explore commercial"
       }
     },
     "work": {
       "label": "Selected work",
-      "title": "Raw slab → finished surface."
+      "title": "Real projects, before & after."
     },
     "stats": {
-      "s1": { "unit": "years", "label": "Of stonework" },
-      "s2": { "unit": "projects", "label": "Floors & surfaces" },
+      "s1": { "unit": "years", "label": "Installing floors & interiors" },
+      "s2": { "unit": "projects", "label": "Homes & businesses" },
       "s3": { "unit": "rating", "label": "Average review" },
       "s4": { "unit": "%", "label": "Quote, no obligation" }
+    },
+    "steps": {
+      "label": "How it works",
+      "title": "Three simple steps to new floors.",
+      "note": "Free and no-obligation — most quotes go out within one business day.",
+      "items": {
+        "s1": { "title": "Tell us about your project", "body": "Call or send the quick form with a few details — the room, rough size, and the material you have in mind." },
+        "s2": { "title": "Get a free quote", "body": "We visit, measure, and send a clear, itemized quote. No pressure, no obligation." },
+        "s3": { "title": "We install", "body": "Our own crew installs on schedule, keeps the site clean, and walks you through the finished work." }
+      }
+    },
+    "faq": {
+      "label": "Questions",
+      "title": "Frequently asked questions.",
+      "more": "Have another question? Call us at",
+      "items": {
+        "f1": { "q": "Do you offer free quotes?", "a": "Yes — every quote is free and no-obligation. Send the contact form or call {phone} and we'll get back to you within one business day." },
+        "f2": { "q": "What do you install?", "a": "Whole-home flooring, kitchen islands and counters, and full bathroom remodels — hardwood, marble, porcelain, and natural stone. We're installers and interior designers, not a materials shop: we help you choose and source, then we build." },
+        "f3": { "q": "What areas do you serve?", "a": "We serve {area}, for both homes and commercial spaces — our commercial crews currently work at Miami International Airport." },
+        "f4": { "q": "How long does an installation take?", "a": "Most single rooms take 2–5 days depending on size and material. You'll get a clear timeline with your quote, and we stick to it." },
+        "f5": { "q": "Are you licensed and insured?", "a": "Yes — fully licensed and insured. References from past clients are available on request." }
+      }
     },
     "cta": {
       "label": "Start a project",
@@ -54,15 +101,75 @@
     }
   },
   "work": {
-    "label": "Selected work",
-    "h1": "Before & after. Raw slab to finished surface.",
-    "intro": "Drag any divider to reveal the difference. Every project is real work for real homeowners.",
+    "label": "Before & after",
+    "h1": "Drag the divider. See the difference.",
+    "intro": "Real transformations from real projects — homes, offices, and restaurants across South Florida. Drag any divider to compare.",
     "filters": {
-      "All": "All",
-      "Marble": "Marble",
-      "Granite": "Granite",
-      "Stone": "Stone",
-      "Flooring": "Flooring"
+      "all": "All projects",
+      "residential": "Residential",
+      "commercial": "Commercial"
+    }
+  },
+  "residential": {
+    "label": "Residential",
+    "h1": "Your home, finished beautifully.",
+    "intro": "From a single bathroom to whole-home flooring, we design and install floors, kitchen islands, and bathrooms for homes across {area} — with one crew from first measurement to final walkthrough.",
+    "heroAlt": "Staircase and wood floors in a renovated Miami home",
+    "services": {
+      "label": "Residential services",
+      "title": "What we do for your home.",
+      "items": {
+        "s1": { "title": "Whole-Home Flooring", "body": "Hardwood, herringbone, marble, and large-format porcelain — supplied by you or sourced with our design guidance, installed by us." },
+        "s2": { "title": "Kitchen Islands & Counters", "body": "Waterfall islands, countertops, and backsplashes fabricated and fitted to the millimetre." },
+        "s3": { "title": "Bathroom Remodels", "body": "Walk-in showers, floor-to-ceiling stone, vanities, and heated floors — fully waterproofed." },
+        "s4": { "title": "Interior Design", "body": "Not sure what fits your space? We help you choose materials, layouts, and finishes that work together." }
+      }
+    },
+    "gallery": {
+      "label": "Recent homes",
+      "title": "A look inside our finished work.",
+      "alts": {
+        "g1": "White kitchen with marble island installed by MG Flooring",
+        "g2": "Luxury bathroom with freestanding tub and stone floors",
+        "g3": "Bedroom with dark hardwood flooring"
+      }
+    },
+    "featured": {
+      "label": "Featured transformation",
+      "title": "A dated bathroom, rebuilt from the floor up."
+    }
+  },
+  "commercial": {
+    "label": "Commercial",
+    "h1": "Floors built for heavy traffic and tight schedules.",
+    "intro": "Offices, restaurants, retail, and public infrastructure across South Florida. We plan around your hours, work in phases, and deliver surfaces that stand up to real use.",
+    "heroAlt": "Modern office space with seamless polished flooring",
+    "cta": "Request a site visit",
+    "mia": {
+      "label": "Featured client",
+      "title": "Miami International Airport",
+      "body": "We are an active flooring contractor at MIA, installing and restoring high-durability surfaces across terminal areas — phased night work, strict safety compliance, and zero disruption to passenger flow.",
+      "alt": "Aircraft at a Miami International Airport terminal",
+      "stats": {
+        "m1": { "value": "MIA", "label": "Active project" },
+        "m2": { "value": "24/7", "label": "Off-hours crews" },
+        "m3": { "value": "100%", "label": "Safety compliant" }
+      }
+    },
+    "capabilities": {
+      "label": "Capabilities",
+      "title": "Built for commercial conditions.",
+      "note": "Licensed and insured for commercial work. References and certificates of insurance available on request.",
+      "items": {
+        "c1": { "title": "Airports & Public Spaces", "body": "High-durability terrazzo, stone, and porcelain for terminals, lobbies, and transit areas — installed in phases around operations." },
+        "c2": { "title": "Offices & Lobbies", "body": "Polished concrete, stone, and wood systems that make a first impression and survive daily traffic." },
+        "c3": { "title": "Restaurants & Retail", "body": "Fast-turnaround installs between lease and opening day, with materials rated for spills and heavy footfall." },
+        "c4": { "title": "Maintenance & Restoration", "body": "Scheduled grinding, polishing, and sealing programs that keep commercial floors looking new." }
+      }
+    },
+    "featured": {
+      "label": "Featured transformation",
+      "title": "An office suite, resurfaced end to end."
     }
   },
   "reviews": {
@@ -81,11 +188,12 @@
       "emailPh": "jane{'@'}email.com",
       "phone": "Phone (optional)",
       "phonePh": "(555) 123-4567",
-      "material": "Material",
+      "material": "Project type",
       "details": "Project details",
       "detailsPh": "Tell us about your space, materials, and timeline…",
       "send": "Send message",
-      "sending": "Sending…"
+      "sending": "Sending…",
+      "note": "Free & no obligation. We reply within one business day."
     },
     "success": {
       "label": "Sent",
@@ -104,11 +212,11 @@
       "area": "Service area"
     },
     "services": {
-      "marble": "Marble",
-      "granite": "Granite",
-      "stone": "Travertine / stone",
-      "flooring": "Flooring",
-      "restoration": "Restoration",
+      "flooring": "Flooring installation",
+      "kitchen": "Kitchen island / counters",
+      "bathroom": "Bathroom remodel",
+      "commercial": "Commercial project",
+      "design": "Interior design",
       "unsure": "Not sure yet"
     }
   },
@@ -125,12 +233,12 @@
     "home": "Back to home"
   },
   "projects": {
-    "calacatta-bath": { "title": "Calacatta Master Bath", "material": "Calacatta Marble", "location": "Hillcrest residence", "summary": "Large-format Calacatta cut, honed, and polished — from raw slab to a seamless, book-matched surface." },
-    "carrara-floor": { "title": "Carrara Entry Floor", "material": "Carrara Marble", "location": "Downtown loft", "summary": "A worn entry floor relaid in Carrara and machine-polished to an even, mirror-clean finish." },
-    "nero-feature": { "title": "Nero Marquina Feature Wall", "material": "Nero Marble", "location": "Modern penthouse", "summary": "Dramatic black marble with white veining, fabricated and set as a floor-to-ceiling statement." },
-    "graphite-counter": { "title": "Graphite Granite Kitchen", "material": "Graphite Granite", "location": "Chef’s kitchen", "summary": "Etched, dull granite restored through professional grinding, polishing, and sealing." },
-    "travertine-patio": { "title": "Travertine Courtyard", "material": "Tumbled Travertine", "location": "Garden courtyard", "summary": "Cracked concrete resurfaced with tumbled travertine for a warm, weather-ready floor." },
-    "basalt-floor": { "title": "Basalt Gallery Floor", "material": "Honed Basalt", "location": "Art studio", "summary": "Raw basalt slabs honed to a soft, uniform matte — a calm, architectural floor." }
+    "kitchen-island": { "title": "Marble Island Kitchen", "scope": "Kitchen island & counters", "location": "Coral Gables residence", "summary": "A gutted kitchen rebuilt around a book-matched marble waterfall island — fabricated, set, and sealed by our crew." },
+    "bath-remodel": { "title": "Primary Bath Remodel", "scope": "Full bathroom remodel", "location": "Brickell condo", "summary": "A dated bathroom taken down to the studs and rebuilt: glass walk-in shower, quartz double vanity, and wood-look porcelain floors." },
+    "herringbone-floor": { "title": "White-Oak Herringbone", "scope": "Whole-home flooring", "location": "Coconut Grove home", "summary": "Worn pine boards replaced with hand-laid white-oak herringbone throughout the living areas." },
+    "living-floor": { "title": "Wide-Plank Living Areas", "scope": "Flooring & design", "location": "Key Biscayne apartment", "summary": "Dated floors swapped for wide-plank oak with a full interior finish palette chosen with the owners." },
+    "office-suite": { "title": "Office Suite Resurfacing", "scope": "Commercial flooring", "location": "Brickell office", "summary": "A tired suite resurfaced with a seamless polished floor system — installed in phases over two weekends, zero downtime." },
+    "restaurant-wynwood": { "title": "Wynwood Dining Room", "scope": "Restaurant build-out", "location": "Wynwood restaurant", "summary": "A worn retail space converted into a moody dining room with dark engineered-wood floors rated for heavy service." }
   },
   "testimonials": {
     "t1": { "quote": "They transformed our worn-out living room into something out of a magazine. The white oak floors are flawless and the crew was meticulous start to finish.", "detail": "Whole-home flooring" },
@@ -141,9 +249,11 @@
     "t6": { "quote": "Professional, punctual, and genuinely skilled with natural stone. Communication was excellent throughout the project.", "detail": "Travertine patio" }
   },
   "seo": {
-    "home": { "title": "{name} — Flooring, Marble & Natural Stone", "description": "{name} designs and installs premium flooring, natural stone, and surface finishes — hardwood, tile, marble, and custom stonework built to last." },
-    "work": { "title": "Work — Before & After Stone Transformations", "description": "Real before-and-after stonework: Carrara, Calacatta, Nero marble, granite, travertine, and floor restoration by {name}." },
-    "reviews": { "title": "Reviews — What Our Clients Say", "description": "Read client reviews. {name} averages {avg}★ for flooring, marble, and natural-stone work." },
-    "contact": { "title": "Contact — Get a Free Flooring & Stone Quote", "description": "Request a free, no-obligation quote from {name}. Call {phone} or send your project details." }
+    "home": { "title": "{name} — Flooring & Interior Installation in Miami", "description": "{name} installs flooring, kitchen islands, bathrooms, and natural stone for homes and businesses across Miami-Dade — including work at Miami International Airport. Free quotes." },
+    "residential": { "title": "Residential Flooring, Kitchens & Bathrooms in Miami", "description": "{name} designs and installs whole-home flooring, kitchen islands, and bathroom remodels across {area}. Free, no-obligation quotes." },
+    "commercial": { "title": "Commercial Flooring Contractor in Miami — Offices, Restaurants & MIA", "description": "{name} installs and restores commercial flooring across South Florida — offices, restaurants, retail, and ongoing work at Miami International Airport." },
+    "work": { "title": "Before & After — Real Flooring & Remodel Transformations", "description": "Drag-to-compare before-and-after projects by {name}: kitchens, bathrooms, whole-home flooring, offices, and restaurants across Miami." },
+    "reviews": { "title": "Reviews — What Our Clients Say", "description": "Read client reviews. {name} averages {avg}★ for flooring, kitchen, and bathroom work across Miami." },
+    "contact": { "title": "Contact — Get a Free Flooring & Remodel Quote", "description": "Request a free, no-obligation quote from {name}. Call {phone} or send your project details." }
   }
 }

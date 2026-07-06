@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { projects } from '~/data/projects'
+import { projects, type Sector } from '~/data/projects'
 
 const site = useSite()
 const { t } = useI18n()
 
-const categories = ['All', 'Marble', 'Granite', 'Stone', 'Flooring'] as const
-const active = ref<(typeof categories)[number]>('All')
+const filters = ['all', 'residential', 'commercial'] as const
+const active = ref<(typeof filters)[number]>('all')
 const filtered = computed(() =>
-  active.value === 'All' ? projects : projects.filter((p) => p.category === active.value),
+  active.value === 'all' ? projects : projects.filter((p) => p.sector === (active.value as Sector)),
 )
 
 useSeoMeta({
@@ -15,7 +15,7 @@ useSeoMeta({
   description: () => t('seo.work.description', { name: site.name }),
   ogTitle: () => t('seo.work.title'),
   ogDescription: () => t('seo.work.description', { name: site.name }),
-  ogImage: `${site.url}/stone/calacatta-polished.svg`,
+  ogImage: `${site.url}/images/residential/kitchen-after.jpg`,
 })
 </script>
 
@@ -35,11 +35,11 @@ useSeoMeta({
     <!-- filter bar -->
     <section class="rule-b sticky top-16 z-30 bg-paper">
       <div class="wrap flex flex-wrap gap-x-8 gap-y-2 py-4">
-        <button v-for="c in categories" :key="c"
+        <button v-for="f in filters" :key="f"
           class="text-[12px] font-medium uppercase tracking-[0.12em] transition-colors"
-          :class="active === c ? 'text-ink' : 'text-stone hover:text-ink'"
-          @click="active = c">
-          {{ t(`work.filters.${c}`) }}<span v-if="active === c" class="text-stone"> ·</span>
+          :class="active === f ? 'text-ink' : 'text-stone hover:text-ink'"
+          @click="active = f">
+          {{ t(`work.filters.${f}`) }}<span v-if="active === f" class="text-accent"> ·</span>
         </button>
       </div>
     </section>
@@ -52,9 +52,11 @@ useSeoMeta({
           <BeforeAfterSlider :before="p.before" :after="p.after" :alt="t(`projects.${p.id}.title`)" />
           <div class="mt-4 flex items-baseline justify-between gap-4 border-t border-line pt-4">
             <h2 class="text-xl tracking-tight">{{ t(`projects.${p.id}.title`) }}</h2>
-            <span class="shrink-0 text-[11px] uppercase tracking-label text-stone">{{ p.index }}</span>
+            <span class="shrink-0 rounded bg-bg px-2.5 py-1 text-[10px] font-medium uppercase tracking-label text-stone-dark">
+              {{ t(`work.filters.${p.sector}`) }}
+            </span>
           </div>
-          <p class="mt-1 text-[11px] uppercase tracking-label text-stone">{{ t(`projects.${p.id}.material`) }} · {{ t(`projects.${p.id}.location`) }}</p>
+          <p class="mt-1 text-[11px] uppercase tracking-label text-stone">{{ t(`projects.${p.id}.scope`) }} · {{ t(`projects.${p.id}.location`) }}</p>
           <p class="mt-3 max-w-prose text-sm leading-relaxed text-stone">{{ t(`projects.${p.id}.summary`) }}</p>
         </article>
       </TransitionGroup>

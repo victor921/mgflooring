@@ -1,19 +1,57 @@
-// Structure only — translatable text (title, material, location, summary) lives
-// in i18n/locales/*.json under `projects.<id>`. Replace before/after with real
-// photos in /public/stone (same filenames).
+// Structure only — translatable text (title, scope, location, summary) lives
+// in i18n/locales/*.json under `projects.<id>`. Swap the images in
+// /public/images with real project photos (same filenames) when available.
+export type Sector = 'residential' | 'commercial'
+
 export interface Project {
   id: string
   index: string
-  category: 'Marble' | 'Granite' | 'Stone' | 'Flooring'
+  sector: Sector
   before: string
   after: string
 }
 
 export const projects: Project[] = [
-  { id: 'calacatta-bath', index: '01', category: 'Marble', before: '/stone/calacatta-raw.svg', after: '/stone/calacatta-polished.svg' },
-  { id: 'carrara-floor', index: '02', category: 'Flooring', before: '/stone/carrara-raw.svg', after: '/stone/carrara-polished.svg' },
-  { id: 'nero-feature', index: '03', category: 'Marble', before: '/stone/nero-raw.svg', after: '/stone/nero-polished.svg' },
-  { id: 'graphite-counter', index: '04', category: 'Granite', before: '/stone/graphite-raw.svg', after: '/stone/graphite-polished.svg' },
-  { id: 'travertine-patio', index: '05', category: 'Stone', before: '/stone/travertine-raw.svg', after: '/stone/travertine-polished.svg' },
-  { id: 'basalt-floor', index: '06', category: 'Flooring', before: '/stone/basalt-raw.svg', after: '/stone/basalt-polished.svg' },
+  {
+    id: 'kitchen-island',
+    index: '01',
+    sector: 'residential',
+    before: '/images/residential/kitchen-before.jpg',
+    after: '/images/residential/kitchen-after.jpg',
+  },
+  {
+    id: 'bath-remodel',
+    index: '02',
+    sector: 'residential',
+    before: '/images/residential/bath-before.jpg',
+    after: '/images/residential/bath-after.jpg',
+  },
+  {
+    id: 'herringbone-floor',
+    index: '03',
+    sector: 'residential',
+    before: '/images/residential/herringbone-before.jpg',
+    after: '/images/residential/herringbone-after.jpg',
+  },
+  {
+    id: 'living-floor',
+    index: '04',
+    sector: 'residential',
+    before: '/images/residential/living-before.jpg',
+    after: '/images/residential/living-after.jpg',
+  },
+  {
+    id: 'office-suite',
+    index: '05',
+    sector: 'commercial',
+    before: '/images/commercial/office-before.jpg',
+    after: '/images/commercial/office-after.jpg',
+  },
+  {
+    id: 'restaurant-wynwood',
+    index: '06',
+    sector: 'commercial',
+    before: '/images/commercial/restaurant-before.jpg',
+    after: '/images/commercial/restaurant-after.jpg',
+  },
 ]

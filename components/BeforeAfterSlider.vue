@@ -9,6 +9,7 @@ const props = withDefaults(
   { alt: 'Stone transformation', ratio: 'aspect-[16/10]' },
 )
 
+const { t } = useI18n()
 const pos = ref(50)
 const wrap = ref<HTMLElement | null>(null)
 const dragging = ref(false)
@@ -43,14 +44,14 @@ const onKey = (e: KeyboardEvent) => {
     <!-- After -->
     <img :src="after" :alt="`${alt} — after`" draggable="false" loading="lazy"
       class="absolute inset-0 h-full w-full object-cover" />
-    <span class="absolute right-4 top-4 bg-ink px-2.5 py-1 text-[10px] font-medium uppercase tracking-label text-paper">After</span>
+    <span class="absolute right-4 top-4 bg-ink px-2.5 py-1 text-[10px] font-medium uppercase tracking-label text-paper">{{ t('common.after') }}</span>
 
     <!-- Before (clipped) -->
     <div class="absolute inset-0 overflow-hidden" :style="{ width: pos + '%' }">
       <img :src="before" :alt="`${alt} — before`" draggable="false" loading="lazy"
         class="absolute inset-0 h-full w-full max-w-none object-cover"
         :style="{ width: wrap?.clientWidth ? wrap.clientWidth + 'px' : '100%' }" />
-      <span class="absolute left-4 top-4 bg-paper px-2.5 py-1 text-[10px] font-medium uppercase tracking-label text-ink">Before</span>
+      <span class="absolute left-4 top-4 bg-paper px-2.5 py-1 text-[10px] font-medium uppercase tracking-label text-ink">{{ t('common.before') }}</span>
     </div>
 
     <!-- Handle -->

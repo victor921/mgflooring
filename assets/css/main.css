@@ -30,12 +30,16 @@
     @apply text-[11px] font-medium uppercase tracking-label text-stone;
   }
 
-  /* Sharp, no-frills buttons */
+  /* Simple, clear buttons */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-[13px]
+    @apply inline-flex items-center justify-center gap-2 rounded px-6 py-3 text-[13px]
            font-medium uppercase tracking-[0.08em] transition-colors duration-200;
   }
+  /* Primary lead CTA — the only accent-colored element on the page */
   .btn-solid {
+    @apply btn bg-accent text-paper hover:bg-accent-dark;
+  }
+  .btn-ink {
     @apply btn bg-ink text-paper hover:bg-stone-dark;
   }
   .btn-outline {

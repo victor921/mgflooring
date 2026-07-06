@@ -20,6 +20,11 @@ export default {
           light: '#94938C',
           dark: '#3A3A36',
         },
+        // Warm wood accent — reserved for lead CTAs so they stand out
+        accent: {
+          DEFAULT: '#92400E',
+          dark: '#78350F',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -34,7 +39,7 @@ export default {
         wrap: '88rem',
       },
       borderRadius: {
-        DEFAULT: '0px',
+        DEFAULT: '0.375rem',
         none: '0px',
       },
     },

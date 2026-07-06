@@ -10,7 +10,7 @@ export const site = {
   shortName: 'MG Flooring',
   tagline: 'Floors & stonework, done beautifully.',
   description:
-    'MG Flooring & Stone designs and installs premium flooring, natural stone, and surface finishes — hardwood, tile, marble, and custom stonework built to last.',
+    'MG Flooring & Stone installs premium flooring, kitchen islands, bathrooms, and natural stone for homes and commercial spaces across Miami — including ongoing work at Miami International Airport.',
 
   // Contact ----------------------------------------------------
   phone: '(555) 123-4567',            // TODO: real phone
@@ -22,13 +22,13 @@ export const site = {
   // Location (powers local-SEO structured data) ----------------
   address: {
     street: '123 Main Street',        // TODO
-    city: 'Your City',                // TODO
-    region: 'ST',                     // TODO state/province
-    postalCode: '00000',              // TODO
+    city: 'Miami',
+    region: 'FL',
+    postalCode: '33101',              // TODO exact zip
     country: 'US',
   },
-  serviceArea: 'the greater metro area', // TODO e.g. "Austin and surrounding areas"
-  geo: { lat: 0, lng: 0 },            // TODO lat/lng for Google Business / maps
+  serviceArea: 'Miami-Dade & South Florida',
+  geo: { lat: 25.7617, lng: -80.1918 }, // TODO exact shop lat/lng
 
   hours: 'Mon–Fri 8am–6pm · Sat by appointment',
 

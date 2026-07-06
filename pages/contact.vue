@@ -9,8 +9,8 @@ useSeoMeta({
   ogDescription: () => t('seo.contact.description', { name: site.name, phone: site.phone }),
 })
 
-const form = reactive({ name: '', email: '', phone: '', service: 'marble', message: '', company: '' })
-const services = ['marble', 'granite', 'stone', 'flooring', 'restoration', 'unsure']
+const form = reactive({ name: '', email: '', phone: '', service: 'flooring', message: '', company: '' })
+const services = ['flooring', 'kitchen', 'bathroom', 'commercial', 'design', 'unsure']
 const status = ref<'idle' | 'sending' | 'success' | 'error'>('idle')
 const errorMsg = ref('')
 
@@ -28,7 +28,7 @@ async function submit() {
   try {
     const res = await fetch(endpoint.value, {
       method: 'POST',
-      headers: { Accept: 'application/json' },
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
       body: JSON.stringify({
         name: form.name, email: form.email, phone: form.phone,
         service: t(`contact.services.${form.service}`), message: form.message,
@@ -95,9 +95,12 @@ async function submit() {
           <input v-model="form.company" type="text" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
 
           <p v-if="status === 'error'" class="text-sm text-ink">{{ errorMsg }}</p>
-          <button type="submit" class="btn-solid" :disabled="status === 'sending'">
-            {{ status === 'sending' ? t('contact.form.sending') : t('contact.form.send') }}
-          </button>
+          <div class="flex flex-wrap items-center gap-5">
+            <button type="submit" class="btn-solid" :disabled="status === 'sending'">
+              {{ status === 'sending' ? t('contact.form.sending') : t('contact.form.send') }}
+            </button>
+            <p class="text-sm text-stone">{{ t('contact.form.note') }}</p>
+          </div>
         </form>
       </div>
 
@@ -131,7 +134,7 @@ async function submit() {
 
 <style scoped>
 .field {
-  @apply mt-2 w-full border border-line bg-paper px-4 py-3 text-ink
+  @apply mt-2 w-full rounded border border-line bg-paper px-4 py-3 text-ink
          placeholder:text-stone-light transition-colors
          focus:border-ink focus:outline-none;
 }

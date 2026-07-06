@@ -9,7 +9,7 @@ const { t } = useI18n()
     <div class="wrap grid gap-10 py-20 md:grid-cols-12 md:items-end md:py-28">
       <div class="md:col-span-8">
         <p class="text-[11px] font-medium uppercase tracking-label text-stone-light">{{ t('home.cta.label') }}</p>
-        <h2 class="mt-6 text-4xl font-medium leading-[1.04] tracking-tightest sm:text-5xl lg:text-6xl">
+        <h2 class="mt-6 text-4xl font-medium leading-[1.04] tracking-tightest text-paper sm:text-5xl lg:text-6xl">
           {{ t('home.cta.title') }}
         </h2>
       </div>
