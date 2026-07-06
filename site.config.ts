@@ -39,8 +39,11 @@ export const site = {
   },
 
   // Deployment -------------------------------------------------
-  url: 'https://www.mgflooring.com',  // TODO production domain (no trailing slash)
-  gaId: 'G-XXXXXXXXXX',               // TODO Google Analytics 4 Measurement ID
+  // TODO: switch to the custom domain (e.g. https://www.mgflooring.com)
+  // once it's connected in Firebase Hosting — this drives canonical URLs,
+  // hreflang, and the sitemap.
+  url: 'https://mgfloorllc-4314d.web.app',
+  gaId: 'G-X4KXJ3EQHZ',               // GA4 measurement ID (Firebase Analytics)
 }
 
 export type SiteConfig = typeof site

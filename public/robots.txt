@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mgflooring.com/sitemap_index.xml
+Sitemap: https://mgfloorllc-4314d.web.app/sitemap_index.xml

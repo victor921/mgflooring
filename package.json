@@ -7,7 +7,8 @@
     "generate": "NITRO_PRESET=static nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && wrangler deploy",
+    "deploy": "firebase deploy --only hosting",
+    "cf:deploy": "npm run generate && wrangler deploy",
     "cf:preview": "npm run generate && wrangler dev"
   },
   "dependencies": {
