@@ -6,7 +6,9 @@
  * ─────────────────────────────────────────────────────────────
  */
 export const site = {
-  name: 'MG Flooring',
+  // Shown as the site name in Google results and page titles
+  name: 'MG Flooring Improvements',
+  // Short version used in the header wordmark and footer
   shortName: 'MG Flooring',
   tagline: 'Floors & stonework, done beautifully.',
   description:

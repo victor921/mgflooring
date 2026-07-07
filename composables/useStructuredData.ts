@@ -24,6 +24,7 @@ export function webSiteNode() {
     '@id': `${site.url}/#website`,
     url: site.url,
     name: site.name,
+    alternateName: [site.shortName, 'mgfloorllc.com'],
     inLanguage: ['en-US', 'es-ES'],
   }
 }

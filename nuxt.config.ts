@@ -111,9 +111,10 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'theme-color', content: '#FFFFFF' },
+        { property: 'og:site_name', content: site.name },
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.png' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
           rel: 'preconnect',
