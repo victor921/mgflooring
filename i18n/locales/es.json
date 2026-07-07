@@ -6,7 +6,8 @@
     "work": "Antes y después",
     "reviews": "Opiniones",
     "contact": "Contacto",
-    "quote": "Pedir presupuesto"
+    "quote": "Pedir presupuesto",
+    "privacy": "Privacidad"
   },
   "common": {
     "getQuote": "Pedir presupuesto",
@@ -22,7 +23,7 @@
   },
   "home": {
     "meta": {
-      "est": "Desde 2009",
+      "est": "Desde 2002",
       "materials": "Residencial · Comercial",
       "serving": "Servicio en {area}",
       "free": "Presupuesto gratis"
@@ -33,7 +34,7 @@
       "alt": "Salón con suelo de tablas anchas instalado por MG Flooring",
       "points": {
         "p1": "Presupuestos gratis y sin compromiso — respuesta en un día laborable",
-        "p2": "Con licencia y seguro, más de 15 años de experiencia",
+        "p2": "Con licencia y seguro, más de 20 años de experiencia",
         "p3": "Instalaciones limpias y puntuales por nuestro propio equipo"
       }
     },
@@ -108,7 +109,8 @@
       "all": "Todos los proyectos",
       "residential": "Residencial",
       "commercial": "Comercial"
-    }
+    },
+    "empty": "Pronto añadiremos nuevos proyectos — vuelve pronto."
   },
   "residential": {
     "label": "Residencial",
@@ -193,16 +195,19 @@
       "detailsPh": "Cuéntanos sobre tu espacio, materiales y plazos…",
       "send": "Enviar mensaje",
       "sending": "Enviando…",
-      "note": "Gratis y sin compromiso. Respondemos en un día laborable."
+      "note": "Gratis y sin compromiso. Respondemos en un día laborable.",
+      "consentPre": "He leído y acepto la",
+      "consentLink": "política de privacidad"
     },
     "success": {
-      "label": "Enviado",
       "title": "Gracias — tu mensaje está en camino.",
-      "body": "Nos pondremos en contacto en un día laborable."
+      "body": "Nos pondremos en contacto en un día laborable.",
+      "again": "Enviar otro mensaje"
     },
     "error": {
-      "generic": "Algo ha fallado. Por favor, llámanos o escríbenos directamente.",
-      "notConfigured": "Formulario aún sin conectar. Añade tu ID de Formspree en site.config.ts."
+      "generic": "No se pudo enviar tu mensaje. Inténtalo de nuevo en un momento.",
+      "network": "Sin conexión — comprueba tu internet e inténtalo de nuevo.",
+      "fallback": "O contáctanos directamente:"
     },
     "aside": {
       "prefer": "¿Prefieres hablar?",
@@ -220,6 +225,21 @@
       "unsure": "Aún no lo sé"
     }
   },
+  "privacy": {
+    "label": "Legal",
+    "h1": "Política de privacidad.",
+    "updated": "Última actualización: 6 de julio de 2026",
+    "intro": "Esta política explica, en lenguaje sencillo, qué información recopila {name} a través de este sitio web y cómo la usamos. Al usar el sitio o enviar el formulario de contacto, aceptas las prácticas descritas aquí.",
+    "sections": {
+      "s1": { "title": "Información que recopilamos", "body": "Cuando pides un presupuesto a través del formulario, recopilamos los datos que decides facilitar: tu nombre, correo electrónico, teléfono (opcional), el tipo de proyecto y tu mensaje. Navegar por el sitio no requiere cuenta, y no recopilamos información personal salvo que nos la envíes." },
+      "s2": { "title": "Cómo usamos tu información", "body": "Usamos tus datos únicamente para responder a tu consulta, preparar tu presupuesto y comunicarnos sobre tu proyecto. No vendemos, alquilamos ni intercambiamos tu información personal — nunca." },
+      "s3": { "title": "Cookies y analítica", "body": "Este sitio usa Google Analytics para entender cómo lo usan los visitantes — páginas vistas, tiempo en el sitio y región general. Estos datos son agregados y no te identifican personalmente. Una pequeña cookie funcional también recuerda tu preferencia de idioma (inglés o español). Puedes bloquear o borrar las cookies en la configuración de tu navegador en cualquier momento sin perder acceso al sitio." },
+      "s4": { "title": "Proveedores de servicio", "body": "El sitio está alojado en Google Firebase Hosting. Los envíos del formulario los entrega Formspree, que los procesa únicamente para hacernos llegar tu mensaje. Cada proveedor trata los datos según su propia política de privacidad." },
+      "s5": { "title": "Conservación de datos", "body": "Conservamos las solicitudes de presupuesto y la correspondencia del proyecto solo el tiempo necesario para atenderte y cumplir obligaciones legales o contables, y después las eliminamos." },
+      "s6": { "title": "Tus opciones y derechos", "body": "Puedes pedirnos en cualquier momento ver, corregir o eliminar la información personal que tenemos sobre ti — escribe a {email} o llama al {phone}. También puedes desactivar la analítica desde tu navegador o con las herramientas de exclusión de Google." },
+      "s7": { "title": "Contacto", "body": "¿Preguntas sobre esta política? Contacta con {name} en {email} o al {phone}." }
+    }
+  },
   "footer": {
     "tagline": "Suelos y piedra, con un acabado impecable.",
     "index": "Índice",
@@ -231,14 +251,6 @@
     "title": "Esta página se ha perdido.",
     "body": "Volvamos a pisar terreno firme.",
     "home": "Volver al inicio"
-  },
-  "projects": {
-    "kitchen-island": { "title": "Cocina con isla de mármol", "scope": "Isla y encimeras de cocina", "location": "Residencia en Coral Gables", "summary": "Una cocina vaciada y reconstruida en torno a una isla de mármol en cascada con veta continua — fabricada, colocada y sellada por nuestro equipo." },
-    "bath-remodel": { "title": "Reforma de baño principal", "scope": "Reforma integral de baño", "location": "Apartamento en Brickell", "summary": "Un baño anticuado demolido hasta la estructura y reconstruido: ducha de obra con mampara, doble lavabo de cuarzo y suelo porcelánico efecto madera." },
-    "herringbone-floor": { "title": "Espiga de roble blanco", "scope": "Suelos de toda la vivienda", "location": "Casa en Coconut Grove", "summary": "Tablas de pino desgastadas sustituidas por espiga de roble blanco colocada a mano en todas las zonas de estar." },
-    "living-floor": { "title": "Salón en tabla ancha", "scope": "Suelos y diseño", "location": "Apartamento en Key Biscayne", "summary": "Suelos anticuados sustituidos por roble de tabla ancha con una paleta de acabados elegida junto a los propietarios." },
-    "office-suite": { "title": "Renovación de oficina", "scope": "Suelos comerciales", "location": "Oficina en Brickell", "summary": "Una oficina cansada renovada con un sistema de suelo continuo pulido — instalado por fases en dos fines de semana, sin parar la actividad." },
-    "restaurant-wynwood": { "title": "Comedor en Wynwood", "scope": "Obra de restaurante", "location": "Restaurante en Wynwood", "summary": "Un local comercial desgastado convertido en un comedor acogedor con suelos de madera técnica oscura aptos para servicio intenso." }
   },
   "testimonials": {
     "t1": { "quote": "Transformaron nuestro salón gastado en algo digno de una revista. Los suelos de roble blanco son impecables y el equipo fue meticuloso de principio a fin.", "detail": "Suelos de toda la vivienda" },
@@ -254,6 +266,7 @@
     "commercial": { "title": "Contratista de Suelos Comerciales en Miami — Oficinas, Restaurantes y MIA", "description": "{name} instala y restaura suelos comerciales en el sur de Florida — oficinas, restaurantes, comercios y trabajo continuo en el Aeropuerto Internacional de Miami." },
     "work": { "title": "Antes y Después — Transformaciones Reales de Suelos y Reformas", "description": "Proyectos de antes y después con comparador de {name}: cocinas, baños, suelos completos, oficinas y restaurantes en Miami." },
     "reviews": { "title": "Opiniones — Lo Que Dicen Nuestros Clientes", "description": "Lee las opiniones de clientes. {name} tiene una media de {avg}★ en suelos, cocinas y baños en Miami." },
-    "contact": { "title": "Contacto — Pide tu Presupuesto Gratis", "description": "Solicita un presupuesto gratis y sin compromiso a {name}. Llama al {phone} o envíanos los detalles de tu proyecto." }
+    "contact": { "title": "Contacto — Pide tu Presupuesto Gratis", "description": "Solicita un presupuesto gratis y sin compromiso a {name}. Llama al {phone} o envíanos los detalles de tu proyecto." },
+    "privacy": { "title": "Política de Privacidad", "description": "Cómo {name} recopila, usa y protege tu información." }
   }
 }

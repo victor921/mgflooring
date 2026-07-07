@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { projects } from '~/data/projects'
-
 const site = useSite()
 const localePath = useLocalePath()
 const { t } = useI18n()
 
-const featured = projects.find((p) => p.id === 'office-suite')!
+const featured = useGallery().find((g) => g.sector === 'commercial')
 const capabilities = ['c1', 'c2', 'c3', 'c4']
 const miaStats = ['m1', 'm2', 'm3']
 
@@ -89,7 +87,7 @@ useSeoMeta({
     </section>
 
     <!-- ── FEATURED BEFORE/AFTER ────────────────────────── -->
-    <section class="border-t border-line bg-bg py-16 md:py-24">
+    <section v-if="featured" class="border-t border-line bg-bg py-16 md:py-24">
       <div class="wrap">
         <div class="flex flex-wrap items-end justify-between gap-6">
           <div>
@@ -99,10 +97,10 @@ useSeoMeta({
           <NuxtLink :to="localePath('/before-after')" class="ulink">{{ t('common.allProjects') }}</NuxtLink>
         </div>
         <div class="mt-10">
-          <BeforeAfterSlider :before="featured.before" :after="featured.after" :alt="t(`projects.${featured.id}.title`)" ratio="aspect-[16/9]" />
+          <BeforeAfterSlider :before="featured.before" :after="featured.after" :alt="galleryCaption(featured, t)" ratio="aspect-[16/9]" />
           <div class="mt-4 flex flex-wrap items-baseline justify-between gap-2 border-t border-line pt-4">
-            <p class="text-lg tracking-tight">{{ t(`projects.${featured.id}.title`) }}</p>
-            <p class="text-[11px] uppercase tracking-label text-stone">{{ t(`projects.${featured.id}.scope`) }} · {{ t(`projects.${featured.id}.location`) }}</p>
+            <p class="text-lg tracking-tight">{{ galleryCaption(featured, t) }}</p>
+            <p class="text-[11px] uppercase tracking-label text-stone">{{ t('work.filters.commercial') }}</p>
           </div>
         </div>
       </div>

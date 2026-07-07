@@ -1,7 +1,41 @@
+import { readdirSync } from 'node:fs'
+import { join } from 'node:path'
 import { site } from './site.config'
+
+/**
+ * Scan public/gallery/<sector>/{before,after}/ at build time and pair
+ * images by number: before1.jpg ↔ after1.jpg, before2.jpg ↔ after2.jpg, …
+ * Drop image pairs into those folders and rebuild — no code changes needed.
+ * A "before" without a matching "after" (or vice versa) is skipped.
+ */
+function scanGallery() {
+  const exts = 'jpe?g|png|webp|avif'
+  const items: { sector: string; n: number; before: string; after: string }[] = []
+  for (const sector of ['residential', 'commercial']) {
+    const dir = join(process.cwd(), 'public/gallery', sector)
+    let befores: string[] = []
+    let afters: string[] = []
+    try { befores = readdirSync(join(dir, 'before')) } catch { /* folder missing — fine */ }
+    try { afters = readdirSync(join(dir, 'after')) } catch { /* folder missing — fine */ }
+    for (const f of befores) {
+      const m = f.match(new RegExp(`^before(\\d+)\\.(${exts})$`, 'i'))
+      if (!m) continue
+      const n = Number(m[1])
+      const after = afters.find((a) => new RegExp(`^after${n}\\.(${exts})$`, 'i').test(a))
+      if (after) items.push({ sector, n, before: `/gallery/${sector}/before/${f}`, after: `/gallery/${sector}/after/${after}` })
+    }
+  }
+  return items.sort((a, b) => a.sector.localeCompare(b.sector) || a.n - b.n)
+}
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      gallery: scanGallery(),
+    },
+  },
+
   compatibilityDate: '2025-01-01',
   devtools: { enabled: true },
 
@@ -48,7 +82,7 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/residential', '/commercial', '/before-after', '/testimonials', '/contact'],
+      routes: ['/', '/residential', '/commercial', '/before-after', '/testimonials', '/contact', '/privacy'],
     },
   },
 

@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { projects, type Sector } from '~/data/projects'
-
 const site = useSite()
 const { t } = useI18n()
 
+const gallery = useGallery()
 const filters = ['all', 'residential', 'commercial'] as const
 const active = ref<(typeof filters)[number]>('all')
 const filtered = computed(() =>
-  active.value === 'all' ? projects : projects.filter((p) => p.sector === (active.value as Sector)),
+  active.value === 'all' ? gallery : gallery.filter((p) => p.sector === active.value),
 )
 
 useSeoMeta({
@@ -15,7 +14,7 @@ useSeoMeta({
   description: () => t('seo.work.description', { name: site.name }),
   ogTitle: () => t('seo.work.title'),
   ogDescription: () => t('seo.work.description', { name: site.name }),
-  ogImage: `${site.url}/images/residential/kitchen-after.jpg`,
+  ogImage: `${site.url}/gallery/residential/after/after1.jpg`,
 })
 </script>
 
@@ -46,20 +45,19 @@ useSeoMeta({
 
     <!-- gallery -->
     <section class="wrap py-14 md:py-20">
-      <TransitionGroup tag="div" class="grid gap-x-8 gap-y-16 md:grid-cols-2"
+      <TransitionGroup tag="div" class="grid gap-x-8 gap-y-14 md:grid-cols-2"
         enter-active-class="transition-opacity duration-300" enter-from-class="opacity-0">
-        <article v-for="p in filtered" :key="p.id">
-          <BeforeAfterSlider :before="p.before" :after="p.after" :alt="t(`projects.${p.id}.title`)" />
+        <article v-for="p in filtered" :key="`${p.sector}-${p.n}`">
+          <BeforeAfterSlider :before="p.before" :after="p.after" :alt="galleryCaption(p, t)" />
           <div class="mt-4 flex items-baseline justify-between gap-4 border-t border-line pt-4">
-            <h2 class="text-xl tracking-tight">{{ t(`projects.${p.id}.title`) }}</h2>
+            <h2 class="text-xl tracking-tight">{{ galleryCaption(p, t) }}</h2>
             <span class="shrink-0 rounded bg-bg px-2.5 py-1 text-[10px] font-medium uppercase tracking-label text-stone-dark">
               {{ t(`work.filters.${p.sector}`) }}
             </span>
           </div>
-          <p class="mt-1 text-[11px] uppercase tracking-label text-stone">{{ t(`projects.${p.id}.scope`) }} · {{ t(`projects.${p.id}.location`) }}</p>
-          <p class="mt-3 max-w-prose text-sm leading-relaxed text-stone">{{ t(`projects.${p.id}.summary`) }}</p>
         </article>
       </TransitionGroup>
+      <p v-if="!filtered.length" class="py-10 text-stone">{{ t('work.empty') }}</p>
     </section>
 
     <HomeCta />

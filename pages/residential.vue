@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { projects } from '~/data/projects'
-
 const site = useSite()
 const localePath = useLocalePath()
 const { t } = useI18n()
 
-const featured = projects.find((p) => p.id === 'bath-remodel')!
+const residentialPairs = useGallery().filter((g) => g.sector === 'residential')
+// Home features pair #1, so this page leads with the next one
+const featured = residentialPairs[1] ?? residentialPairs[0]
 const services = ['s1', 's2', 's3', 's4']
 const gallery = [
   { src: '/images/residential/kitchen-white.jpg', key: 'g1' },
@@ -18,7 +18,7 @@ useSeoMeta({
   description: () => t('seo.residential.description', { name: site.name, area: site.serviceArea }),
   ogTitle: () => t('seo.residential.title'),
   ogDescription: () => t('seo.residential.description', { name: site.name, area: site.serviceArea }),
-  ogImage: `${site.url}/images/residential/kitchen-after.jpg`,
+  ogImage: `${site.url}/gallery/residential/after/after1.jpg`,
 })
 </script>
 
@@ -84,14 +84,14 @@ useSeoMeta({
     </section>
 
     <!-- ── FEATURED BEFORE/AFTER ────────────────────────── -->
-    <section class="wrap py-16 md:py-24">
+    <section v-if="featured" class="wrap py-16 md:py-24">
       <p class="label">{{ t('residential.featured.label') }}</p>
       <h2 class="mt-5 text-3xl tracking-tighter sm:text-4xl">{{ t('residential.featured.title') }}</h2>
       <div class="mt-10">
-        <BeforeAfterSlider :before="featured.before" :after="featured.after" :alt="t(`projects.${featured.id}.title`)" ratio="aspect-[16/9]" />
+        <BeforeAfterSlider :before="featured.before" :after="featured.after" :alt="galleryCaption(featured, t)" ratio="aspect-[16/9]" />
         <div class="mt-4 flex flex-wrap items-baseline justify-between gap-2 border-t border-line pt-4">
-          <p class="text-lg tracking-tight">{{ t(`projects.${featured.id}.title`) }}</p>
-          <p class="text-[11px] uppercase tracking-label text-stone">{{ t(`projects.${featured.id}.scope`) }} · {{ t(`projects.${featured.id}.location`) }}</p>
+          <p class="text-lg tracking-tight">{{ galleryCaption(featured, t) }}</p>
+          <p class="text-[11px] uppercase tracking-label text-stone">{{ t('work.filters.residential') }}</p>
         </div>
       </div>
     </section>

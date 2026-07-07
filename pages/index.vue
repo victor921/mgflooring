@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { projects } from '~/data/projects'
 import { testimonials } from '~/data/testimonials'
 
 const site = useSite()
 const localePath = useLocalePath()
 const { t } = useI18n()
 
-const featured = projects[0]
+const gallery = useGallery()
+const featured = gallery.find((g) => g.sector === 'residential') ?? gallery[0]
 const quote = testimonials[0]
 const heroImage = '/images/hero-living.jpg'
 
@@ -22,7 +22,7 @@ const disciplines = [
   { n: '04', id: 'd4' },
 ]
 const stats = [
-  { value: '15', id: 's1' },
+  { value: '20+', id: 's1' },
   { value: '600', id: 's2' },
   { value: '4.9', id: 's3' },
   { value: '100', id: 's4' },
@@ -157,11 +157,11 @@ useSeoMeta({
           <NuxtLink :to="localePath('/before-after')" class="ulink">{{ t('common.allProjects') }}</NuxtLink>
         </div>
 
-        <div class="mt-10">
-          <BeforeAfterSlider :before="featured.before" :after="featured.after" :alt="t(`projects.${featured.id}.title`)" ratio="aspect-[16/9]" />
+        <div v-if="featured" class="mt-10">
+          <BeforeAfterSlider :before="featured.before" :after="featured.after" :alt="galleryCaption(featured, t)" ratio="aspect-[16/9]" />
           <div class="mt-4 flex flex-wrap items-baseline justify-between gap-2 border-t border-line pt-4">
-            <p class="text-lg tracking-tight">{{ t(`projects.${featured.id}.title`) }}</p>
-            <p class="text-[11px] uppercase tracking-label text-stone">{{ t(`projects.${featured.id}.scope`) }} · {{ t(`projects.${featured.id}.location`) }}</p>
+            <p class="text-lg tracking-tight">{{ galleryCaption(featured, t) }}</p>
+            <p class="text-[11px] uppercase tracking-label text-stone">{{ t(`work.filters.${featured.sector}`) }}</p>
           </div>
         </div>
       </div>

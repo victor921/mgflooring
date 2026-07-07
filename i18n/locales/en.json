@@ -6,7 +6,8 @@
     "work": "Before & After",
     "reviews": "Reviews",
     "contact": "Contact",
-    "quote": "Get a quote"
+    "quote": "Get a quote",
+    "privacy": "Privacy"
   },
   "common": {
     "getQuote": "Get a quote",
@@ -22,7 +23,7 @@
   },
   "home": {
     "meta": {
-      "est": "Est. 2009",
+      "est": "Est. 2002",
       "materials": "Residential · Commercial",
       "serving": "Serving {area}",
       "free": "Free quotes"
@@ -33,7 +34,7 @@
       "alt": "Living room with wide-plank wood-look floor installed by MG Flooring",
       "points": {
         "p1": "Free, no-obligation quotes — reply within one business day",
-        "p2": "Licensed & insured, 15+ years of experience",
+        "p2": "Licensed & insured, 20+ years of experience",
         "p3": "Clean, on-time installs by our own crew"
       }
     },
@@ -108,7 +109,8 @@
       "all": "All projects",
       "residential": "Residential",
       "commercial": "Commercial"
-    }
+    },
+    "empty": "New projects are on the way — check back soon."
   },
   "residential": {
     "label": "Residential",
@@ -193,16 +195,19 @@
       "detailsPh": "Tell us about your space, materials, and timeline…",
       "send": "Send message",
       "sending": "Sending…",
-      "note": "Free & no obligation. We reply within one business day."
+      "note": "Free & no obligation. We reply within one business day.",
+      "consentPre": "I have read and agree to the",
+      "consentLink": "privacy policy"
     },
     "success": {
-      "label": "Sent",
       "title": "Thank you — your message is on its way.",
-      "body": "We’ll be in touch within one business day."
+      "body": "We’ll be in touch within one business day.",
+      "again": "Send another message"
     },
     "error": {
-      "generic": "Something went wrong. Please call or email us directly.",
-      "notConfigured": "Form not yet connected. Add your Formspree ID in site.config.ts."
+      "generic": "Your message couldn’t be sent. Please try again in a moment.",
+      "network": "No connection — please check your internet and try again.",
+      "fallback": "Or reach us directly:"
     },
     "aside": {
       "prefer": "Prefer to talk?",
@@ -220,6 +225,21 @@
       "unsure": "Not sure yet"
     }
   },
+  "privacy": {
+    "label": "Legal",
+    "h1": "Privacy policy.",
+    "updated": "Last updated: July 6, 2026",
+    "intro": "This policy explains, in plain language, what information {name} collects through this website and how we use it. By using the site or submitting the contact form, you agree to the practices described here.",
+    "sections": {
+      "s1": { "title": "Information we collect", "body": "When you request a quote through our contact form, we collect the details you choose to provide: your name, email address, phone number (optional), the type of project, and your message. Browsing the site does not require an account, and we do not collect personal information unless you send it to us." },
+      "s2": { "title": "How we use your information", "body": "We use your details only to respond to your inquiry, prepare your quote, and communicate about your project. We do not sell, rent, or trade your personal information — ever." },
+      "s3": { "title": "Cookies & analytics", "body": "This site uses Google Analytics to understand how visitors use it — pages visited, time on site, and general region. This data is aggregated and does not identify you personally. A small functional cookie also remembers your language preference (English or Spanish). You can block or delete cookies in your browser settings at any time without losing access to the site." },
+      "s4": { "title": "Service providers", "body": "The site is hosted on Google Firebase Hosting. Contact-form submissions are delivered by Formspree, which processes them solely to forward your message to us. Each provider handles data under its own privacy policy." },
+      "s5": { "title": "Data retention", "body": "We keep quote requests and project correspondence only as long as needed to serve you and to meet legal or accounting obligations, and delete them afterwards." },
+      "s6": { "title": "Your choices & rights", "body": "You may ask us at any time to see, correct, or delete the personal information we hold about you — email {email} or call {phone}. You can also opt out of analytics using your browser settings or Google's opt-out tools." },
+      "s7": { "title": "Contact", "body": "Questions about this policy? Contact {name} at {email} or {phone}." }
+    }
+  },
   "footer": {
     "tagline": "Floors & stonework, done beautifully.",
     "index": "Index",
@@ -231,14 +251,6 @@
     "title": "This page wandered off.",
     "body": "Let’s get you back on solid ground.",
     "home": "Back to home"
-  },
-  "projects": {
-    "kitchen-island": { "title": "Marble Island Kitchen", "scope": "Kitchen island & counters", "location": "Coral Gables residence", "summary": "A gutted kitchen rebuilt around a book-matched marble waterfall island — fabricated, set, and sealed by our crew." },
-    "bath-remodel": { "title": "Primary Bath Remodel", "scope": "Full bathroom remodel", "location": "Brickell condo", "summary": "A dated bathroom taken down to the studs and rebuilt: glass walk-in shower, quartz double vanity, and wood-look porcelain floors." },
-    "herringbone-floor": { "title": "White-Oak Herringbone", "scope": "Whole-home flooring", "location": "Coconut Grove home", "summary": "Worn pine boards replaced with hand-laid white-oak herringbone throughout the living areas." },
-    "living-floor": { "title": "Wide-Plank Living Areas", "scope": "Flooring & design", "location": "Key Biscayne apartment", "summary": "Dated floors swapped for wide-plank oak with a full interior finish palette chosen with the owners." },
-    "office-suite": { "title": "Office Suite Resurfacing", "scope": "Commercial flooring", "location": "Brickell office", "summary": "A tired suite resurfaced with a seamless polished floor system — installed in phases over two weekends, zero downtime." },
-    "restaurant-wynwood": { "title": "Wynwood Dining Room", "scope": "Restaurant build-out", "location": "Wynwood restaurant", "summary": "A worn retail space converted into a moody dining room with dark engineered-wood floors rated for heavy service." }
   },
   "testimonials": {
     "t1": { "quote": "They transformed our worn-out living room into something out of a magazine. The white oak floors are flawless and the crew was meticulous start to finish.", "detail": "Whole-home flooring" },
@@ -254,6 +266,7 @@
     "commercial": { "title": "Commercial Flooring Contractor in Miami — Offices, Restaurants & MIA", "description": "{name} installs and restores commercial flooring across South Florida — offices, restaurants, retail, and ongoing work at Miami International Airport." },
     "work": { "title": "Before & After — Real Flooring & Remodel Transformations", "description": "Drag-to-compare before-and-after projects by {name}: kitchens, bathrooms, whole-home flooring, offices, and restaurants across Miami." },
     "reviews": { "title": "Reviews — What Our Clients Say", "description": "Read client reviews. {name} averages {avg}★ for flooring, kitchen, and bathroom work across Miami." },
-    "contact": { "title": "Contact — Get a Free Flooring & Remodel Quote", "description": "Request a free, no-obligation quote from {name}. Call {phone} or send your project details." }
+    "contact": { "title": "Contact — Get a Free Flooring & Remodel Quote", "description": "Request a free, no-obligation quote from {name}. Call {phone} or send your project details." },
+    "privacy": { "title": "Privacy Policy", "description": "How {name} collects, uses, and protects your information." }
   }
 }

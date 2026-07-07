@@ -22,7 +22,7 @@ watch(() => route.path, () => (open.value = false))
       <!-- Wordmark -->
       <NuxtLink :to="localePath('/')" class="flex items-baseline gap-2" aria-label="Home">
         <span class="text-[15px] font-semibold uppercase tracking-tight">MG Flooring</span>
-        <span class="hidden text-[11px] uppercase tracking-label text-stone sm:inline">Stone &amp; Surfaces</span>
+        <!-- <span class="hidden text-[11px] uppercase tracking-label text-stone sm:inline">Stone &amp; Surfaces</span> -->
       </NuxtLink>
 
       <!-- Desktop nav -->

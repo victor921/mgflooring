@@ -54,7 +54,10 @@ const links = [
     <div class="border-t border-line">
       <div class="wrap flex flex-col justify-between gap-2 py-6 text-[11px] uppercase tracking-label text-stone sm:flex-row">
         <p>© {{ year }} {{ site.name }}</p>
-        <p>{{ t('footer.bottomTagline') }}</p>
+        <div class="flex gap-6">
+          <NuxtLink :to="localePath('/privacy')" class="transition-colors hover:text-ink">{{ t('nav.privacy') }}</NuxtLink>
+          <p>{{ t('footer.bottomTagline') }}</p>
+        </div>
       </div>
     </div>
   </footer>
