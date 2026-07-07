@@ -1,8 +1,10 @@
 <script setup lang="ts">
 const site = useSite()
 
-// Global structured data — LocalBusiness for strong local SEO
+// Global structured data — LocalBusiness for strong local SEO,
+// WebSite for site-name/structure recognition (feeds sitelinks)
 useStructuredData(localBusinessNode())
+useStructuredData(webSiteNode())
 
 // Per-locale <html lang> + hreflang alternate links (good for multilingual SEO)
 const i18nHead = useLocaleHead()

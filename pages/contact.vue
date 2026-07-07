@@ -3,6 +3,11 @@ const site = useSite()
 const localePath = useLocalePath()
 const { t } = useI18n()
 
+useStructuredData(breadcrumbNode([
+  { name: t('nav.home'), path: localePath('/') },
+  { name: t('nav.contact'), path: localePath('/contact') },
+]))
+
 useSeoMeta({
   title: () => t('seo.contact.title'),
   description: () => t('seo.contact.description', { name: site.name, phone: site.phone }),

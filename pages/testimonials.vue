@@ -2,8 +2,14 @@
 import { testimonials } from '~/data/testimonials'
 
 const site = useSite()
+const localePath = useLocalePath()
 const { t } = useI18n()
 const avg = (testimonials.reduce((s, x) => s + x.rating, 0) / testimonials.length).toFixed(1)
+
+useStructuredData(breadcrumbNode([
+  { name: t('nav.home'), path: localePath('/') },
+  { name: t('nav.reviews'), path: localePath('/testimonials') },
+]))
 
 useSeoMeta({
   title: () => t('seo.reviews.title'),

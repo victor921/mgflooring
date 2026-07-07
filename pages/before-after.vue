@@ -1,6 +1,12 @@
 <script setup lang="ts">
 const site = useSite()
+const localePath = useLocalePath()
 const { t } = useI18n()
+
+useStructuredData(breadcrumbNode([
+  { name: t('nav.home'), path: localePath('/') },
+  { name: t('nav.work'), path: localePath('/before-after') },
+]))
 
 const gallery = useGallery()
 const filters = ['all', 'residential', 'commercial'] as const

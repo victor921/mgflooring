@@ -16,6 +16,35 @@ export function useStructuredData(node: Record<string, any>) {
   })
 }
 
+/** WebSite node — helps Google associate the site name and structure. */
+export function webSiteNode() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${site.url}/#website`,
+    url: site.url,
+    name: site.name,
+    inLanguage: ['en-US', 'es-ES'],
+  }
+}
+
+/**
+ * BreadcrumbList for a subpage — tells Google how pages nest, one of the
+ * signals it uses when picking sitelinks. Pass locale-aware paths.
+ */
+export function breadcrumbNode(items: { name: string; path: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      item: `${site.url}${it.path}`,
+    })),
+  }
+}
+
 /** Base LocalBusiness node used site-wide (strong local SEO signal). */
 export function localBusinessNode(extra: Record<string, any> = {}) {
   const sameAs = Object.values(site.social).filter(Boolean)

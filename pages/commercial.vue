@@ -7,6 +7,11 @@ const featured = useGallery().find((g) => g.sector === 'commercial')
 const capabilities = ['c1', 'c2', 'c3', 'c4']
 const miaStats = ['m1', 'm2', 'm3']
 
+useStructuredData(breadcrumbNode([
+  { name: t('nav.home'), path: localePath('/') },
+  { name: t('nav.commercial'), path: localePath('/commercial') },
+]))
+
 useSeoMeta({
   title: () => t('seo.commercial.title'),
   description: () => t('seo.commercial.description', { name: site.name }),

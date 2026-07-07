@@ -13,6 +13,11 @@ const gallery = [
   { src: '/images/residential/bedroom.jpg', key: 'g3' },
 ]
 
+useStructuredData(breadcrumbNode([
+  { name: t('nav.home'), path: localePath('/') },
+  { name: t('nav.residential'), path: localePath('/residential') },
+]))
+
 useSeoMeta({
   title: () => t('seo.residential.title'),
   description: () => t('seo.residential.description', { name: site.name, area: site.serviceArea }),

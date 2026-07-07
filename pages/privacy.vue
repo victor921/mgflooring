@@ -1,8 +1,14 @@
 <script setup lang="ts">
 const site = useSite()
+const localePath = useLocalePath()
 const { t } = useI18n()
 
 const sections = ['s1', 's2', 's3', 's4', 's5', 's6', 's7']
+
+useStructuredData(breadcrumbNode([
+  { name: t('nav.home'), path: localePath('/') },
+  { name: t('nav.privacy'), path: localePath('/privacy') },
+]))
 
 useSeoMeta({
   title: () => t('seo.privacy.title'),
