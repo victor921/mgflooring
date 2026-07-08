@@ -244,7 +244,8 @@
     "tagline": "Suelos y piedra, con un acabado impecable.",
     "index": "Índice",
     "contact": "Contacto",
-    "bottomTagline": "Suelos · Mármol · Granito · Piedra natural"
+    "bottomTagline": "Suelos · Mármol · Granito · Piedra natural",
+    "craftedBy": "Creado por "
   },
   "error": {
     "code": "Error {code}",

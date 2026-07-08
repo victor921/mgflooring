@@ -53,7 +53,13 @@ const links = [
 
     <div class="border-t border-line">
       <div class="wrap flex flex-col justify-between gap-2 py-6 text-[11px] uppercase tracking-label text-stone sm:flex-row">
-        <p>© {{ year }} {{ site.name }}</p>
+        <p>
+          © {{ year }} {{ site.name }}
+          <span class="mx-2 text-line">·</span>
+          <span>{{ t('footer.craftedBy') }}</span>
+          <a href="https://rocox.co/" target="_blank" rel="noopener"
+            class="font-medium text-stone-dark transition-colors hover:text-accent">RocoX</a>
+        </p>
         <div class="flex gap-6">
           <NuxtLink :to="localePath('/privacy')" class="transition-colors hover:text-ink">{{ t('nav.privacy') }}</NuxtLink>
           <p>{{ t('footer.bottomTagline') }}</p>

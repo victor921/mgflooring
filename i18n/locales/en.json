@@ -244,7 +244,8 @@
     "tagline": "Floors & stonework, done beautifully.",
     "index": "Index",
     "contact": "Contact",
-    "bottomTagline": "Flooring · Marble · Granite · Natural Stone"
+    "bottomTagline": "Flooring · Marble · Granite · Natural Stone",
+    "craftedBy": "Crafted by "
   },
   "error": {
     "code": "Error {code}",
